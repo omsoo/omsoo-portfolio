@@ -1,21 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins&family=Roboto:wght@700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   overflow: hidden;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
   line-height: 20px;
 }
+
 a {
   text-decoration: none;
   color: rgba(255, 255, 255, 1);
 }
+
 .navbar {
   position: fixed;
   background: rgba(62, 60, 60, 1);
@@ -27,19 +31,23 @@ a {
   justify-content: space-between;
   align-items: center;
 }
+
 .navbar li a {
   display: block;
   padding: 15px 5px;
 }
+
 .logo {
   margin: 1rem 1rem;
 }
+
 .fa-bars {
   font-size: 1.5rem;
   position: absolute;
   right: 2rem;
   top: 1.8rem;
 }
+
 .header-container {
   display: flex;
   background: rgb(28, 26, 25);
@@ -51,13 +59,15 @@ a {
   background-repeat: no-repeat;
   background-position: bottom right;
 }
+
 .sub-container {
   width: 90%;
   margin: 9rem 2em;
 }
+
 .header-highlight-1 {
   color: rgba(255, 107, 0, 1);
-  font-family: Crete Round;
+  font-family: "Crete Round", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 56px;
@@ -65,8 +75,9 @@ a {
   letter-spacing: 0.37px;
   margin-bottom: 1rem;
 }
+
 .header-highlight-2 {
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 24px;
@@ -74,8 +85,9 @@ a {
   color: rgba(255, 245, 225, 1);
   margin-top: 1rem;
 }
+
 .header-highlight-3 {
-  font-family: Poppins;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 16px;
@@ -83,6 +95,7 @@ a {
   color: rgba(255, 245, 225, 1);
   margin-top: 1rem;
 }
+
 .social-icons {
   font-size: 20px;
   letter-spacing: 0.6rem;
