@@ -1,43 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins&family=Roboto:wght@700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
-  font-family: Inter;
+  overflow: hidden;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
   line-height: 20px;
 }
+
+ul {
+  list-style-type: none;
+}
+
 a {
   text-decoration: none;
   color: rgba(255, 255, 255, 1);
 }
+
 .navbar {
   position: fixed;
   background: rgba(62, 60, 60, 1);
   display: flex;
   display: inline-block;
   width: 100%;
-  height: 92px;
+  height: 80px;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
+
 .navbar li a {
   display: block;
   padding: 15px 5px;
 }
+
 .logo {
   margin: 1rem 1rem;
 }
+
 .fa-bars {
   font-size: 1.5rem;
   position: absolute;
   right: 2rem;
   top: 1.8rem;
 }
+
 .header-container {
   display: flex;
   background: rgb(28, 26, 25);
@@ -45,43 +59,57 @@ a {
   padding-top: 4rem;
   margin: 0 auto;
   max-width: 100%;
+  background-image: url(/images/background.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
 }
+
 .sub-container {
   width: 90%;
-  margin: 10rem 2em;
+  margin: 9rem 2em;
 }
+
 .header-highlight-1 {
-  color: rgba(255, 107, 0, 1);
-  font-family: Crete Round;
-  font-weight: 400;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 12px 0;
+  color: #ff6b00;
+  font-family: "Crete Round", sans-serif;
+  font-weight: normal;
   font-style: normal;
   font-size: 56px;
   line-height: 64px;
   letter-spacing: 0.37px;
   margin-bottom: 1rem;
 }
+
 .header-highlight-2 {
-  font-family: Roboto;
-  font-weight: 700;
+  display: flex;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
   font-style: normal;
   font-size: 24px;
   line-height: 32px;
-  color: rgba(255, 245, 225, 1);
+  color: #fff5e1;
   margin-top: 1rem;
 }
+
 .header-highlight-3 {
-  font-family: Poppins;
-  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  font-weight: normal;
   font-style: normal;
   font-size: 16px;
   line-height: 24px;
-  color: rgba(255, 245, 225, 1);
+  color: #fff;
   margin-top: 1rem;
 }
+
 .social-icons {
   font-size: 20px;
-  letter-spacing: 0.6rem;
-  display: inline-block;
+  letter-spacing: 0.8rem;
+  display: flex;
   color: white;
   margin-top: 1.2rem;
 }
