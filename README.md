@@ -9,6 +9,8 @@ The project is still in the works, but when completed, it will tell my story, sk
 - CSS
 - Javascript (propective)
 
+# Author
+https://github.com/omsoo/
 
 # Version History
 0.1
