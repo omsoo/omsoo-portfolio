@@ -1,16 +1,14 @@
 # omsoo-portfolio
 
-This is my portfolio page that shows my skills, experience and history of works done. 
+The project is still in the works, but when completed, it will tell my story, skills, experience, and work history. Constructive feedback is encouraged.
 
 
 ## Built With
 
 - HTML
 - CSS
+- Javascript (propective)
 
 
-## Authors
-
-👤 **Author1**
-
-- GitHub: (https://github.com/omsoo)
+# Version History
+0.1
