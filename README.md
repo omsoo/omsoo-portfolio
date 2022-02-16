@@ -33,4 +33,4 @@ $ git checkout mobile-website-section
 
 #Acknowledgments
 
-Hat tip to anyone whose code was reviewed at the course of this project.
+Hat tip to anyone whose code was reviewed at the course of this project
