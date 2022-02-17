@@ -414,7 +414,7 @@ button[disabled] {
   top: 0;
 }
 
-.about-header > h1 {
+.about-header > h3 {
   position: static;
   width: 327px;
   height: 79px;
