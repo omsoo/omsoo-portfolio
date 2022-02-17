@@ -15,7 +15,21 @@ body {
 }
 
 ul {
-  list-style: none;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+  position: static;
+  width: 297px;
+  height: 40px;
+  left: 0;
+  top: 207px;
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+  margin: 12px 0;
+  justify-content: space-between;
 }
 
 a {
@@ -169,8 +183,6 @@ hr {
   position: absolute;
   top: 920px;
   left: 0;
-
-  /* grid-template-columns: 1fr; */
   grid-template-columns: repeat(auto-fill, minmax(375px, 1fr));
   width: 375px;
   height: 1300px;
@@ -192,8 +204,6 @@ hr {
   left: 0;
   background-image: url(/images/Img-Placeholder.png);
   background-repeat: no-repeat;
-
-  /* margin: 24px 0; */
   order: 0;
 }
 
@@ -250,24 +260,6 @@ hr {
   order: 1;
   flex-grow: 0;
   margin: 12px 0;
-}
-
-ul {
-  list-style-type: none;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 0;
-  position: static;
-  width: 297px;
-  height: 40px;
-  left: 0;
-  top: 207px;
-  flex: none;
-  order: 2;
-  flex-grow: 0;
-  margin: 12px 0;
-  justify-content: space-between;
 }
 
 .card-tool {
