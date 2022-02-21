@@ -263,10 +263,15 @@ hr {
 }
 
 .card-tool {
-  width: 240px;
+  position: absolute;
+  top: 17rem;
+  left: 0;
+  width: 327px;
+  background: green;
+  height: 40px;
 }
 
-.tools {
+/* .tools {
   width: 55px;
   height: 40px;
   padding: 10px;
@@ -278,7 +283,7 @@ hr {
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
-}
+} */
 
 .bootstrap {
   width: 100px;
