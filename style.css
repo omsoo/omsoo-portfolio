@@ -16,8 +16,6 @@ body {
 
 ul {
   list-style-type: none;
-  display: flex;
-  flex-direction: row;
   align-items: center;
   padding: 0;
   position: static;
@@ -287,6 +285,10 @@ hr {
 
 .bootstrap {
   width: 100px;
+
+}
+.ruby{
+  float: right;
 }
 
 .tools-spec {
