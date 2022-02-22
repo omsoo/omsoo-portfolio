@@ -256,5 +256,57 @@
         </div>
       </div>
     </section>
+    <section class="form-sctn">
+      <h3 class="form-header">
+        I'm always interested in hearing about new projects, so if you'd like to
+        chat please get in touch.
+      </h3>
+      <form
+        class="mform"
+        action="https://formspree.io/f/xrgjqdqe"
+        method="post"
+      >
+        <div class="input-field">
+          <label for="fname"></label>
+          <input
+            class="name-email"
+            maxlength="30"
+            type="text"
+            id="fname"
+            name="fname"
+            placeholder="Full name"
+            required
+          />
+        </div>
+        <div class="input-field">
+          <label for="femail"></label>
+          <input
+            size="64"
+            maxlength="64"
+            required
+            class="name-email"
+            type="email"
+            id="femail"
+            name="femail"
+            placeholder="Email address"
+            pattern=".+@gmail\.com"
+          />
+        </div>
+        <div class="txtarea-container">
+          <label for="tname"></label>
+          <textarea
+            rows="5"
+            cols="40"
+            maxlength="500"
+            class="txt-area"
+            name="tname"
+            id="tname"
+            placeholder="Enter text here"
+            required
+          ></textarea>
+        </div>
+        <input class="bt button" type="submit" value="Get in touch" />
+      </form>
+    </section>
   </body>
 </html>
