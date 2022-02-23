@@ -585,17 +585,17 @@ button[disabled] {
   position: absolute;
   width: 375px;
   height: 844px;
-  left: 0px;
+  left: 0;
   top: 5870px;
 }
 
-form-header {
+.form-header {
   position: static;
   width: 327px;
   height: 216px;
-  left: 0px;
-  top: 0px;
-  font-family: Inter;
+  left: 0;
+  top: 0;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 32px;
@@ -619,6 +619,7 @@ form-header {
   border-bottom: solid #dbd8d7 2px;
   margin-top: 24px;
 }
+
 .name-email {
   width: 295px;
   height: 40px;
@@ -654,4 +655,14 @@ form-header {
   color: #3c3a39;
 }
 
-.txt-area::placeholder { color: #3c3a39; } .bt { width: 131px; height: 48px; padding: 12px; margin: 24px 0; order: 3; } 
+.txt-area::placeholder {
+  color: #3c3a39;
+}
+
+.bt {
+  width: 131px;
+  height: 48px;
+  padding: 12px;
+  margin: 24px 0;
+  order: 3;
+}
