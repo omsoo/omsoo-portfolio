@@ -378,134 +378,88 @@ button[disabled] {
   flex: none;
   margin: 24px 0;
 }
-
 .skills {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 120px 24px;
-  position: absolute;
-  width: 329px;
-  height: 1241.46px;
+
   color: #fff;
-  top: 663px;
-  left: 10px;
 }
 
 .diamond-language {
   display: flex;
-  flex-direction: row;
   align-items: center;
-  padding: 8px 12px;
-  position: static;
-  width: 225.46px;
-  height: 41.46px;
-  left: 0;
-  top: 0;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  margin: 24px 0;
 }
 
 .diamond {
-  position: static;
   width: 18px;
   height: 18px;
-  left: 12px;
-  top: 20.73px;
+
   background: #ff6b00;
   transform: rotate(-45deg);
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  margin: 0 12px;
+
+  margin-right: 8px;
+  margin-top: 1rem;
 }
 
 .language {
-  position: static;
   width: 164px;
   height: 24px;
-  left: 49.46px;
-  top: 8.73px;
+
   text-transform: capitalize;
   font-family: "InaiMathi", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 32px;
   line-height: 44px;
-  display: flex;
-  align-items: center;
+
   color: #fff;
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-  margin: 0 12px;
+
+  margin-left: 16px;
 }
 
 .lang {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding: 0 12px;
-  position: static;
+
   width: 186px;
   height: 216px;
-  left: 15.73px;
-  top: 65.46px;
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-  margin: 24px auto;
 }
 
 .java {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 12px 0;
-  position: static;
+
   width: 114px;
   height: 48px;
 }
 
 .java-text {
-  position: static;
-  width: 114px;
-  height: 24px;
-  left: 0;
-  top: 12px;
   font-family: "Inter", sans-serif;
   font-style: normal;
   text-transform: capitalize;
   font-weight: normal;
   font-size: 22px;
   line-height: 43px;
-  align-items: center;
-  text-align: center;
 }
 
 .square {
-  position: static;
   width: 18px;
   height: 18px;
-  left: 12px;
-  top: 11px;
+
   background: #ff6b00;
-  flex: none;
-  margin: 0 12px;
+
+  margin-right: 8px;
+  margin-top: 1rem;
 }
 
 .circle {
-  position: static;
   width: 18px;
   height: 18px;
-  left: 12px;
-  top: 11px;
+
   background: #ff6b00;
   border-radius: 150px;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  margin: 0 12px;
+
+  margin-right: 8px;
+  margin-top: 1rem;
 }
