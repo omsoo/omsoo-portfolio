@@ -7,10 +7,8 @@
 }
 
 body {
+  overflow-x: hidden;
   font-family: "Inter", sans-serif;
-  position: relative;
-  width: 375px;
-  height: 6100px;
   background: #fff;
 }
 
