@@ -9,6 +9,12 @@
 body {
   overflow-x: hidden;
   font-family: "Inter", sans-serif;
+<<<<<<< HEAD
+=======
+  position: relative;
+  width: 375px;
+  height: 6710px;
+>>>>>>> 6e5fca27ae6ef9da2a64eb4cafeac6ecd3c82a9e
   background: #fff;
 }
 
@@ -573,4 +579,94 @@ button[disabled] {
   order: 0;
   flex-grow: 0;
   margin: 0 12px;
+}
+
+.form-sctn {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 120px 24px;
+  position: absolute;
+  width: 375px;
+  height: 844px;
+  left: 0;
+  top: 5870px;
+}
+
+.form-header {
+  position: static;
+  width: 327px;
+  height: 216px;
+  left: 0;
+  top: 0;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 44px;
+  text-align: center;
+  color: #172b4d;
+}
+
+.mform {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: static;
+  width: 327px;
+  height: 400px;
+  margin: 70px 0;
+}
+
+.input-field {
+  width: 327px;
+  border-bottom: solid #dbd8d7 2px;
+  margin-top: 24px;
+}
+
+.name-email {
+  width: 295px;
+  height: 40px;
+  border: none;
+  margin-left: 16px;
+}
+
+::placeholder {
+  color: rgba(151, 148, 147, 1);
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+  line-height: 24px;
+  font-family: "Inter", sans-serif;
+}
+
+.txtarea-container {
+  position: relative;
+  margin-top: 17px;
+  width: 327px;
+  height: 114px;
+  background: #fbf8f7;
+}
+
+.txt-area {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  height: 90px;
+  width: 303px;
+  background: #fbf8f7;
+  border: none;
+  color: #3c3a39;
+}
+
+.txt-area::placeholder {
+  color: #3c3a39;
+}
+
+.bt {
+  width: 131px;
+  height: 48px;
+  padding: 12px;
+  margin: 24px 0;
+  order: 3;
 }
