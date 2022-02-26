@@ -19,7 +19,6 @@ ul {
   align-items: center;
   position: static;
   height: 2.5rem;
- 
   flex-grow: 0;
   margin: 0.8rem 0;
 }
@@ -32,8 +31,8 @@ a {
 .navbar {
   overflow: hidden;
   background: #3c3a39;
- 
 }
+
 .navbar a {
   float: left;
   text-align: center;
@@ -51,7 +50,6 @@ a {
 
 .fa-bars {
   font-size: 1.5rem;
-  /
 }
 
 .nv-hide {
@@ -62,10 +60,8 @@ a {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 120px 24;
-  
+  padding: 120px 24px;
   height: 90vh;
-  
   background: #1c1a19;
   width: 100%;
 }
@@ -75,19 +71,13 @@ a {
   background-repeat: no-repeat;
   background-position: bottom right;
   flex-direction: column;
-  
   padding: 120px 24px;
- 
   width: 100%;
- 
 }
-
-
 
 .hero-highlight-1 {
   color: #ff6b00;
   position: static;
-  
   font-family: "Crete Round", sans-serif;
   font-weight: normal;
   font-style: normal;
@@ -100,7 +90,6 @@ a {
   display: flex;
   align-items: center;
   font-family: "Roboto", sans-serif;
-  
   font-weight: bold;
   font-style: normal;
   font-size: 24px;
@@ -114,7 +103,6 @@ a {
   max-width: 370px;
   height: 123px;
   left: 24px;
- 
   font-family: "Poppins", sans-serif;
   font-weight: normal;
   font-style: normal;
@@ -130,19 +118,15 @@ a {
 .social-icons {
   font-size: 20px;
   letter-spacing: 1.5rem;
- 
 }
 
 .recent-work {
- 
   position: relative;
- 
   text-transform: capitalize;
   font-family: "Crete Round", sans-serif;
   font-style: normal;
   font-weight: normal;
   color: #1c1a19;
-
   margin: 24px 0;
   font-size: 40px;
   line-height: 52px;
@@ -160,6 +144,7 @@ hr {
   top: 130px;
   border: 0.3px solid rgb(0, 0, 0);
 }
+
 .grid-containers {
   margin: 0 1rem;
 }
@@ -167,16 +152,13 @@ hr {
 .grid-container {
   display: grid;
   grid-template-columns: 1fr;
-
   margin-bottom: 90px;
 }
 
 .cd-main-header {
   position: relative;
   height: 37rem;
-  
 }
-
 
 .placeholder-header-txt {
   position: static;
@@ -234,7 +216,6 @@ hr {
   font-size: 15px;
   line-height: 20px;
   margin-right: 0.5rem;
-  
 }
 
 .bootstrap {
@@ -256,11 +237,9 @@ hr {
   cursor: pointer;
   transition-duration: 0.4s;
   display: inline-block;
-
   font-weight: bold;
   font-size: 17px;
   line-height: 24px;
-  
 }
 
 .button:hover {
@@ -277,9 +256,7 @@ button[disabled] {
 }
 
 .cards {
-  
   position: relative;
-
   background-image: url(/images/cadr-img-bg.png);
   background-repeat: round;
   color: #fff;
@@ -295,7 +272,6 @@ button[disabled] {
   width: 295px;
   height: 81px;
   left: 16px;
-
   text-transform: capitalize;
   font-family: "Crete Round", sans-serif;
   font-style: normal;
@@ -335,7 +311,6 @@ button[disabled] {
 
 .about-section {
   position: relative;
- 
   background: #1c1a19;
 }
 
@@ -357,9 +332,7 @@ button[disabled] {
   flex-direction: column;
   align-items: flex-start;
   padding: 120px 24px;
- 
   height: 640px;
- 
 }
 
 .about-header > h3 {
@@ -399,126 +372,98 @@ button[disabled] {
   flex-direction: column;
   align-items: center;
   padding: 120px 24px;
- 
   color: #fff;
-
 }
 
 .diamond-language {
   display: flex;
   align-items: center;
-
 }
 
 .diamond {
-
   width: 18px;
   height: 18px;
- 
   background: #ff6b00;
   transform: rotate(-45deg);
- 
   margin-right: 8px;
   margin-top: 1rem;
 }
 
 .language {
-  
   width: 164px;
   height: 24px;
- 
   text-transform: capitalize;
   font-family: "InaiMathi", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 32px;
   line-height: 44px;
-
   color: #fff;
-
   margin-left: 16px;
 }
 
 .lang {
   display: flex;
   flex-direction: column;
- 
   width: 186px;
   height: 216px;
-
 }
 
 .java {
   display: flex;
- 
   width: 114px;
   height: 48px;
 }
 
 .java-text {
-
   font-family: "Inter", sans-serif;
   font-style: normal;
   text-transform: capitalize;
   font-weight: normal;
   font-size: 22px;
   line-height: 43px;
- 
 }
 
 .square {
-  
   width: 18px;
   height: 18px;
-  
   background: #ff6b00;
-
   margin-right: 8px;
   margin-top: 1rem;
 }
 
 .circle {
-  
   width: 18px;
   height: 18px;
-
   background: #ff6b00;
   border-radius: 150px;
-  
   margin-right: 8px;
   margin-top: 1rem;
 }
 
 .form-sctn {
-  
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 120px;
- 
   width: 100%;
   height: 844px;
-
 }
 
 .form-header {
- 
   width: 327px;
   height: 216px;
-  
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 32px;
   line-height: 44px;
-
   color: #172b4d;
 }
 
 .mform {
   display: flex;
   flex-direction: column;
- 
   width: 327px;
   height: 400px;
   margin: 70px 0;
@@ -582,16 +527,16 @@ button[disabled] {
     background-size: 650px 768px;
     background-position: center right;
   }
-  .grid-container {
 
+  .grid-container {
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
-
   }
+
   .cards {
     width: 100%;
     height: 400px;
-    background-repeat: none;
+    background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
   }
@@ -603,17 +548,13 @@ button[disabled] {
     margin-bottom: 2rem;
   }
 
-
   .placeholder-img-container {
-   
     width: 100%;
   }
-  .multi-post {
-  }
+
   .placeholder-img {
     height: 550px;
     width: 50vw;
-
   }
 
   .placeholder-header-txt {
@@ -622,12 +563,15 @@ button[disabled] {
     width: auto;
     margin-top: -0.7rem;
   }
+
   .technology {
     margin-top: -2rem;
   }
+
   .grid-containers {
     margin: 0 5rem;
   }
+
   .place-holder-txt {
     width: 350px;
     height: 160px;
@@ -635,54 +579,59 @@ button[disabled] {
 
   .recent-work {
     position: relative;
-    
     margin: 0 4.3rem;
     width: 100%;
   }
+
   .recent-work > hr {
     position: absolute;
     top: 2.7rem;
     left: 370px;
-  
     width: 53%;
     height: 0.1px;
-    
     border: 1px solid rgb(0, 0, 0);
   }
+
   .about-header {
     background-image: url(./images/desktop-about.png);
     background-repeat: no-repeat;
     background-position: center right;
-
-    
   }
+
   .about-section {
     padding-left: 5rem;
   }
+
   .line-divider {
     width: 85%;
     margin: 0 5rem;
   }
+
   .about-header-text {
     width: 40%;
   }
+
   .skills {
     width: 85%;
     flex-direction: row;
     justify-content: space-between;
   }
+
   .diamond-language {
     padding: 8px 0;
   }
+
   .language-contaier {
     /* float: left; */
   }
+
   .form-sctn {
     padding-left: 5rem;
     flex-direction: row;
     height: 600px;
     width: 90%;
   }
+
   .form-header {
     width: 40%;
     margin-top: -15rem;
@@ -696,16 +645,20 @@ button[disabled] {
 
   .txt-area {
     width: 97%;
-   
     font-size: 16px;
   }
-  
+
   .cd-2,
-  .cd-5, .cd-1, .cd-3, .cd-4, .cd-6 {
+  .cd-5,
+  .cd-1,
+  .cd-3,
+  .cd-4,
+  .cd-6 {
     background-image: url(/images/cd-img1.png);
     position: relative;
   }
-  .img-display{
+
+  .img-display {
     background-color: rgba(12, 11, 10, 0.5);
     position: absolute;
     top: 0;
@@ -713,55 +666,64 @@ button[disabled] {
     width: 100%;
     height: 100%;
   }
-  
+
   .hide {
     display: none;
   }
+
   .card-content {
     padding-top: 58px;
   }
+
   .hero-container {
     flex-direction: row;
   }
+
   .social-icons {
     display: block;
     float: left;
   }
+
   .hero-sctn-icon {
     height: 200px;
     margin: 2rem 35px 0 0;
     order: 0;
   }
+
   .hero-fab {
     margin-bottom: 0.7rem;
   }
+
   .hero-sctn-icon > .social-icons {
     height: 100%;
     font-size: 1rem;
-   
   }
+
   .hero-sctn {
     order: 1;
   }
- 
+
   .nav-item {
     display: none;
   }
-  .navbar {
-  
-    padding: 0.5rem 6rem;
 
+  .navbar {
+    padding: 0.5rem 6rem;
   }
+
   .nv-hide {
     display: inline;
   }
+
   .fa-barrs {
     display: none;
   }
-  .card-content:hover + .hide{
+
+  .card-content:hover + .hide {
     display: block;
   }
+
   .hide-2:hover {
-  display: none;
-}
+    display: none;
+  }
 }
