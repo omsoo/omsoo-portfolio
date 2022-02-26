@@ -23,35 +23,32 @@ ul {
   flex-grow: 0;
   margin: 0.8rem 0;
 }
-
 a {
   text-decoration: none;
   color: rgba(255, 255, 255, 1);
 }
 
 .navbar {
-  position: absolute;
+  overflow: hidden;
   background: #3c3a39;
-  width: 375px;
-  height: 92px;
-  left: 0;
-  top: 0;
+}
+.navbar a {
+  float: left;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
-.navbar li a {
-  display: block;
-  padding: 15px 5px;
+.topnav-right {
+  float: right;
 }
 
-.logo {
-  margin: 1rem 1rem;
+.portfolio {
+  float: right;
 }
 
 .fa-bars {
   font-size: 1.5rem;
-  position: absolute;
-  right: 2rem;
-  top: 1.8rem;
 }
 
 .hero-container {
