@@ -524,7 +524,7 @@ button[disabled] {
 @media screen and (min-width: 1000px) {
   .sub-container {
     background-image: url(./images/desktop-hero-img.png);
-    background-size: 1000px 768px;
+    background-size: 650px 768px;
     background-position: center right;
   }
 
@@ -619,10 +619,6 @@ button[disabled] {
 
   .diamond-language {
     padding: 8px 0;
-  }
-
-  .language-contaier {
-    /* float: left; */
   }
 
   .form-sctn {
