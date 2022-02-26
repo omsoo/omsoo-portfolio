@@ -96,7 +96,7 @@ body {
     opacity: 1;
   }
 }
-
+.nav-logo { animation: bounce 2s ease infinite; color: #f5f6f8; letter-spacing: 0.4rem; font-size: 1rem; font-weight: 700; } 
 ul {
   list-style-type: none;
   display: flex;
