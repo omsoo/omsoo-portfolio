@@ -434,6 +434,7 @@ button[disabled] {
   order: 1;
   flex-grow: 0;
   padding-top: 96px;
+  background: #f55800;
 }
 
 .btn {
