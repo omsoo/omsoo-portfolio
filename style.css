@@ -393,7 +393,7 @@ button[disabled] {
 
 .cards {
   position: relative;
-  background-image: url(/images/cadr-img-bg.png);
+  background-image: url(./images/cadr-img-bg.png);
   background-repeat: round;
   color: #fff;
   height: 386px;
@@ -402,13 +402,12 @@ button[disabled] {
 
 .card-content {
   padding: 0 15px;
-  width: 100%;
 }
 
 .cd-header {
-  width: 100%;
+  width: 295px;
   height: 81px;
-  /* left: 16px; */
+  left: 16px;
   text-transform: capitalize;
   font-family: "Crete Round", sans-serif;
   font-style: normal;
@@ -420,7 +419,7 @@ button[disabled] {
 
 .cd-txt {
   position: static;
-  width: 100%;
+  width: 295px;
   height: 87px;
   left: 16px;
   top: 101px;
@@ -434,7 +433,6 @@ button[disabled] {
   order: 1;
   flex-grow: 0;
   padding-top: 96px;
-  background: #f55800;
 }
 
 .btn {
@@ -861,8 +859,8 @@ button[disabled] {
   .card-content:hover + .hide {
     display: block;
   }
+
   .hide-2:hover {
-    opacity: 0;
-    filter: alpha(opacity=0);
+    display: none;
   }
 }
