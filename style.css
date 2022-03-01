@@ -255,13 +255,12 @@ button[disabled] {
   color: #595454;
 }
 
-.cards {
-  position: relative;
-  background-image: url(/images/cadr-img-bg.png);
-  background-repeat: round;
-  color: #fff;
-  height: 386px;
-  margin-left: 15px;
+.cardss {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .card-content {
@@ -654,8 +653,12 @@ button[disabled] {
   .cd-3,
   .cd-4,
   .cd-6 {
-    background-image: url(/images/cd-img1.png);
+    /* background-image: url(/images/cd-img1.png); */
+    /* background-repeat: round; */
     position: relative;
+    color: #fff;
+    height: 386px;
+    margin-left: 15px;
   }
 
   .img-display {
