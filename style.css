@@ -15,7 +15,8 @@ Default Styles
 body {
   overflow-x: hidden;
   font-family: "Inter", sans-serif;
-  background: #fff;
+  /* background: #fff; */
+  background: red;
 }
 
 ul {
@@ -201,7 +202,7 @@ Animations
 }
 
 .sub-container {
-  background-image: url(./images/background.png);
+  background-image: url(../images/background.png);
   background-repeat: no-repeat;
   background-position: bottom right;
   flex-direction: column;
@@ -393,7 +394,7 @@ button[disabled] {
 
 .cards {
   position: relative;
-  background-image: url(./images/cadr-img-bg.png);
+  background-image: url(../images/cadr-img-bg.png);
   background-repeat: round;
   color: #fff;
   height: 386px;
@@ -461,7 +462,7 @@ button[disabled] {
 }
 
 .about-header {
-  background-image: url(./images/about-bg.png);
+  background-image: url(../images/about-bg.png);
   background-repeat: no-repeat;
   background-position: bottom right;
   display: flex;
@@ -659,7 +660,7 @@ button[disabled] {
 
 @media screen and (min-width: 1000px) {
   .sub-container {
-    background-image: url(./images/desktop-hero-img.png);
+    background-image: url(../images/desktop-hero-img.png);
     background-size: 650px 768px;
     background-position: center right;
   }
@@ -729,7 +730,7 @@ button[disabled] {
   }
 
   .about-header {
-    background-image: url(./images/desktop-about.png);
+    background-image: url(../images/desktop-about.png);
     background-repeat: no-repeat;
     background-position: center right;
   }
@@ -790,7 +791,7 @@ button[disabled] {
   .cd-3,
   .cd-4,
   .cd-6 {
-    background-image: url(/images/cd-img1.png);
+    background-image: url(../images/cd-img1.png);
     position: relative;
   }
 
