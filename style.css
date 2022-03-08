@@ -1,56 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins&family=Roboto:wght@700&display=swap");
-nav {
-  background: #3c3a39;
-  color: #fff;
-  display: flex;
-  justify-content: space-between;
-}
-nav .mainMenu {
-  display: flex;
-  list-style: none;
-  font-weight: 700;
-  font-family: "Inter", sans-serif;
-}
-nav .mainMenu li a {
-  display: inline-block;
-  padding: 15px;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #fff;
-  font-size: 15px;
-}
-nav .mainMenu li a:hover {
-  background: rgb(255, 94, 0);
-}
-nav .openMenu {
-  font-size: 1.5rem;
-  margin-top: 0.6rem;
-  display: none;
-  cursor: pointer;
-}
-nav .mainMenu .closeMenu,
-.icons i {
-  font-size: 2rem;
-  display: none;
-  cursor: pointer;
-}
-.fa-pinterest-p:hover {
-  color: rgb(0, 110, 255);
-}
-.fa-twitter:hover {
-  color: rgb(86, 154, 243);
-}
-.fa-linkedin-in:hover {
-  color: rgb(255, 0, 191);
-}
-.fa-github:hover {
-  color: rgb(255, 123, 0);
-}
-.fa-angellist:hover {
-  color: rgb(255, 123, 0);
-}
 
-/* 
+/*
 ================
 Variables
 ================
@@ -98,16 +48,70 @@ a {
   color: rgba(255, 255, 255, 1);
 }
 
-.navbar {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 2;
-  box-shadow: 2px 0 2px rgba(253, 251, 251, 0.2);
-  width: 100vw;
-  max-width: 28rem;
+nav {
+  background: #3c3a39;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
 }
+
+nav .mainMenu {
+  display: flex;
+  list-style: none;
+  font-weight: 700;
+  font-family: "Inter", sans-serif;
+}
+
+nav .mainMenu li a {
+  display: inline-block;
+  padding: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff5e1;
+  font-size: 15px;
+  /* line-height: 4px; */
+  text-transform: capitalize;
+  /* margin-bottom: 6rem; */
+}
+
+nav .mainMenu li a:hover {
+  background: rgb(255, 94, 0);
+}
+
+nav .openMenu {
+  font-size: 1.5rem;
+  margin-top: 0.6rem;
+  display: none;
+  cursor: pointer;
+}
+
+nav .mainMenu .closeMenu,
+.icons i {
+  font-size: 2rem;
+  display: none;
+  cursor: pointer;
+}
+
+.fa-pinterest-p:hover {
+  color: rgb(0, 110, 255);
+}
+
+.fa-twitter:hover {
+  color: rgb(86, 154, 243);
+}
+
+.fa-linkedin-in:hover {
+  color: rgb(255, 0, 191);
+}
+
+.fa-github:hover {
+  color: rgb(255, 123, 0);
+}
+
+.fa-angellist:hover {
+  color: rgb(255, 123, 0);
+}
+
 .showNav {
   transform: translate(0);
 }
@@ -271,13 +275,6 @@ nav .logo:hover {
   position: relative;
   overflow: hidden;
   background: #3c3a39;
-}
-
-.navbar-window a {
-  float: left;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
 }
 
 .topnav-right {
@@ -773,7 +770,18 @@ button[disabled] {
     background: #3c3a39;
     transition: top 1s ease;
     display: none;
+  }
+
+  nav .mainMenu li a {
+    display: inline-block;
+    padding: 30px 20px 0 20px;
+    text-decoration: none;
+    text-transform: uppercase;
     color: #fff5e1;
+    font-size: 32px;
+    /* line-height: 4px; */
+    text-transform: capitalize;
+    /* margin-bottom: 6rem; */
   }
 
   .envelope {
@@ -786,17 +794,33 @@ button[disabled] {
     top: 20px;
     right: 20px;
   }
+
   nav .openMenu {
     display: block;
   }
+
   nav .mainMenu li a:hover {
     background: none;
     color: rgb(255, 123, 0);
     font-size: 1.6rem;
   }
+
   .icons i {
     display: inline-block;
     padding: 12px;
+  }
+
+  .menuSlideBorder {
+    height: 5rem;
+    width: 80vw;
+    border-bottom: 1px solid #fff5e1;
+    /* margin: 0 auto; */
+    /* background: red; */
+    /* align-items: center; */
+  }
+
+  #menuTopMargin {
+    margin-top: -220px;
   }
 }
 
