@@ -13,6 +13,6 @@ function show() {
 function close() {
   mainMenu.style.top = "-100%";
 }
-// slideMenu.forEach((slide_Menu) => {
-//   slide_Menu.addEventListener("click", close);
-// });
+slideMenu.forEach((slide_Menu) => {
+  slide_Menu.addEventListener("click", close);
+});
