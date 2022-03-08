@@ -1,6 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins&family=Roboto:wght@700&display=swap");
 
 /*
+================
+Variables
+================
+ */
+:root {
+  --transition: all 0.3s linear;
+}
+
+/*
 ==============
 Default Styles
 ==============
@@ -18,7 +27,7 @@ body {
   background: #fff;
 }
 
-ul {
+.ull {
   list-style-type: none;
   display: flex;
   flex-direction: row;
@@ -29,9 +38,100 @@ ul {
   margin: 0.8rem 0;
 }
 
+.top-right-nav {
+  display: flex;
+  flex-direction: row;
+}
+
 a {
   text-decoration: none;
   color: rgba(255, 255, 255, 1);
+}
+
+nav {
+  background: #3c3a39;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav .mainMenu {
+  display: flex;
+  list-style: none;
+  font-weight: 700;
+  font-family: "Inter", sans-serif;
+}
+
+nav .mainMenu li a {
+  display: inline-block;
+  padding: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff5e1;
+  font-size: 15px;
+}
+
+nav .mainMenu li a:hover {
+  background: rgb(255, 94, 0);
+}
+
+nav .openMenu {
+  font-size: 1.5rem;
+  margin-top: 0.6rem;
+  display: none;
+  cursor: pointer;
+}
+
+nav .mainMenu .closeMenu,
+.icons i {
+  font-size: 2rem;
+  display: none;
+  cursor: pointer;
+}
+
+.fa-pinterest-p:hover {
+  color: rgb(0, 110, 255);
+}
+
+.fa-twitter:hover {
+  color: rgb(86, 154, 243);
+}
+
+.fa-linkedin-in:hover {
+  color: rgb(255, 0, 191);
+}
+
+.fa-github:hover {
+  color: rgb(255, 123, 0);
+}
+
+.fa-angellist:hover {
+  color: rgb(255, 123, 0);
+}
+
+.showNav {
+  transform: translate(0);
+}
+
+#nav-btn {
+  cursor: pointer;
+}
+
+.navbar-header {
+  text-align: right;
+  padding: 0.7rem 1.2rem 0 0;
+}
+
+.nav-close {
+  font-size: 1.6rem;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.fa-barrs {
+  position: absolute;
+  top: 6px;
+  right: 9px;
 }
 
 /*
@@ -144,34 +244,34 @@ Animations
   }
 }
 
-/* End of Animation Keyframes */
-.nav-logo {
+.navContainer {
+  height: 65px;
+  padding: 0.5rem 1rem 1rem 1rem;
+}
+
+nav .logo {
+  margin: 0.8rem;
+  font-size: 15px;
+  cursor: pointer;
   animation: bounce 2s ease infinite;
   color: #f5f6f8;
   letter-spacing: 0.4rem;
-  font-size: 1rem;
   font-weight: 700;
 }
 
-.nav-logo:hover {
+nav .logo:hover {
   animation: rm-bounce 0.5s ease-out;
-  color: rgb(217, 219, 102);
+  color: #ff6b00;
 }
 
 .hero-sctn h1 {
   animation: slideFromRight 5s ease-in-out 1;
 }
 
-.navbar {
+.navbar-window {
+  position: relative;
   overflow: hidden;
   background: #3c3a39;
-}
-
-.navbar a {
-  float: left;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
 }
 
 .topnav-right {
@@ -180,10 +280,6 @@ Animations
 
 .portfolio {
   float: right;
-}
-
-.fa-bars {
-  font-size: 1.5rem;
 }
 
 .nv-hide {
@@ -657,6 +753,68 @@ button[disabled] {
   order: 3;
 }
 
+@media (max-width: 800px) {
+  nav .mainMenu {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #3c3a39;
+    transition: top 1s ease;
+    display: none;
+  }
+
+  nav .mainMenu li a {
+    display: inline-block;
+    padding: 30px 20px 0 20px;
+    text-decoration: none;
+    color: #fff5e1;
+    font-size: 32px;
+    text-transform: capitalize;
+  }
+
+  .envelope {
+    opacity: 0;
+  }
+
+  nav .mainMenu .closeMenu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  nav .openMenu {
+    display: block;
+  }
+
+  nav .mainMenu li a:hover {
+    background: none;
+    color: rgb(255, 123, 0);
+    font-size: 1.6rem;
+  }
+
+  .icons i {
+    display: inline-block;
+    padding: 12px;
+  }
+
+  .menuSlideBorder {
+    height: 5rem;
+    width: 80vw;
+    border-bottom: 1px solid #fff5e1;
+  }
+
+  #menuTopMargin {
+    margin-top: -220px;
+  }
+}
+
 @media screen and (min-width: 1000px) {
   .sub-container {
     background-image: url("./images/desktop-hero-img.png");
@@ -838,22 +996,6 @@ button[disabled] {
 
   .hero-sctn {
     order: 1;
-  }
-
-  .nav-item {
-    display: none;
-  }
-
-  .navbar {
-    padding: 0.5rem 6rem;
-  }
-
-  .nv-hide {
-    display: inline;
-  }
-
-  .fa-barrs {
-    display: none;
   }
 
   .card-content:hover + .hide {
