@@ -14,26 +14,28 @@
   <body>
     <div class="main-container">
       <header>
-        <div class="navbar">
+        <div class="navbar-window">
           <a href="#" class="nav-logo">OMSOO</a>
-          <div class="topnav-right">
-            <a href="#" class="nv-hide">Portfolio</a>
-            <a href="#" class="nv-hide">About</a>
-            <a href="#" class="nv-hide">Contact</a>
-            <div class="nv-hide">
+          <div class="navbar" id="navbar">
+            <div class="navbar-header">
+              <span class="nav-close fa-barrs" id="nav-close">
+                <i class="fas fa-times"></i>
+              </span>
+              <span class="fa-barrs nav-btn" id="nav-btn"
+                ><i class="fas fa-bars"></i
+              ></span>
+            </div>
+            <div class="topnav-right nv-hide">
+              <a href="#">Portfolio</a>
+              <a href="#">About</a>
+              <a href="#">Contact</a>
+
               <a href="#"><i class="fas fa-envelope"></i></a>
             </div>
-            <div class="fa-barrs">
-              <div class="navbar-header">
-                <span class="nav-close" id="nav-close">
-                  <i class="fas fa-times"></i>
-                </span>
-              </div>
-              <div>
-                <a href="#"><i class="fas fa-bars"></i></a>
-              </div>
-            </div>
           </div>
+
+          <!-- <div class="fa-barrs nav-btn" id="nav-btn">
+          </div> -->
         </div>
       </header>
       <div class="hero-container sub-container">
@@ -355,5 +357,6 @@
         </form>
       </div>
     </div>
+    <script src="app.js"></script>
   </body>
 </html>
