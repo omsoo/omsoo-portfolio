@@ -69,9 +69,6 @@ nav .mainMenu li a {
   text-transform: uppercase;
   color: #fff5e1;
   font-size: 15px;
-  /* line-height: 4px; */
-  text-transform: capitalize;
-  /* margin-bottom: 6rem; */
 }
 
 nav .mainMenu li a:hover {
@@ -776,12 +773,9 @@ button[disabled] {
     display: inline-block;
     padding: 30px 20px 0 20px;
     text-decoration: none;
-    text-transform: uppercase;
     color: #fff5e1;
     font-size: 32px;
-    /* line-height: 4px; */
     text-transform: capitalize;
-    /* margin-bottom: 6rem; */
   }
 
   .envelope {
@@ -814,9 +808,6 @@ button[disabled] {
     height: 5rem;
     width: 80vw;
     border-bottom: 1px solid #fff5e1;
-    /* margin: 0 auto; */
-    /* background: red; */
-    /* align-items: center; */
   }
 
   #menuTopMargin {
