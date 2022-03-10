@@ -170,19 +170,19 @@ Modal Styles
   /* margin-bottom: 10px; */
 }
 
-/* .liveLink-one {
+.liveLink-one {
   position: absolute;
   top: 1rem;
   left: 0;
-  margin-right: 2px; */
+  margin-right: 2px;
   width: 111px;
 height: 40px;
 padding: 0.6rem 0.8rem;
 
 }
-/* .liveLink-two {
+.liveLink-two {
   position: absolute;
-  top: 1rem; */
+  top: 1rem;
   left: 120px;
   /* margin-right: 2rem; */
   width: 130px;
@@ -191,9 +191,9 @@ padding: 0.6rem 0.8rem;
   /* align-items: center; */
 }
 
-/* .gridModal {
+.gridModal {
   display: grid;
-  grid-template-columns: repeat(1, 1fr); */
+  grid-template-columns: repeat(1, 1fr);
   gap: 1rem;
 }
 
