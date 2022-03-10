@@ -88,56 +88,56 @@ const arrayData = [
   },
 ];
 
-// function show() {
-//   mainMenu.style.display = "flex";
-//   mainMenu.style.top = "0";
-// }
+function show() {
+  mainMenu.style.display = "flex";
+  mainMenu.style.top = "0";
+}
 
-// function close() {
-//   mainMenu.style.top = "-100%";
-// }
+function close() {
+  mainMenu.style.top = "-100%";
+}
 
-// slideMenu.forEach((slideMenuCheck) => {
-//   slideMenuCheck.addEventListener("click", close);
-// });
+slideMenu.forEach((slideMenuCheck) => {
+  slideMenuCheck.addEventListener("click", close);
+});
 
-// function closeModal() {
-//   modal.classList.remove("showModal");
-// }
-// const openModal =
-//   ({ name, description, mobileImage, desktopIMG, goLiveLinks, modalButtons }) =>
-//   () => {
-//     modal.classList.add("showModal");
-//     let display = "";
-//     display += `
-//   <div class="modalHead">
-//   <h2 class="modalTitle">${name}</h2>
-// </div>
-// <div class="gridModal">
-//   <div class="gridOne">
-//     <div class="modal-Icons">
-//       <a class="modalTechnology" href=""> ${modalButtons[0]} </a>
-//       <a class="modalTechnology" href=""> ${modalButtons[1]} </a>
-//       <a class="modalTechnology" href=""> ${modalButtons[2]} </a>
-//     </div>
-//     <img class="modal-img" src= ${
-//       width > 1024 ? desktopIMG : mobileImage
-//     } alt=${name} />
-//   </div>
-//   <div class="modalMain gridTwo">
-//     <p class="modalDescription">${description}</p>
-//     <div class="modal-btn-container">
-//       <a class="modal-live-link liveLink-one" href=""> ${
-//         goLiveLinks[0]
-//       } <i class="modIcon fab fa-github hero-fab"></i></a>
-//       <a class="modal-live-link liveLink-two" href=""> ${
-//         goLiveLinks[1]
-//       } <i class="modIcon fab fa-pinterest-p hero-fab"></i></a>
-//     </div>
-//   </div>
-// </div>`;
-//     modalDisplay.innerHTML = display;
-//   };
+function closeModal() {
+  modal.classList.remove("showModal");
+}
+const openModal =
+  ({ name, description, mobileImage, desktopIMG, goLiveLinks, modalButtons }) =>
+  () => {
+    modal.classList.add("showModal");
+    let display = "";
+    display += `
+  <div class="modalHead">
+  <h2 class="modalTitle">${name}</h2>
+</div>
+<div class="gridModal">
+  <div class="gridOne">
+    <div class="modal-Icons">
+      <a class="modalTechnology" href=""> ${modalButtons[0]} </a>
+      <a class="modalTechnology" href=""> ${modalButtons[1]} </a>
+      <a class="modalTechnology" href=""> ${modalButtons[2]} </a>
+    </div>
+    <img class="modal-img" src= ${
+      width > 1024 ? desktopIMG : mobileImage
+    } alt=${name} />
+  </div>
+  <div class="modalMain gridTwo">
+    <p class="modalDescription">${description}</p>
+    <div class="modal-btn-container">
+      <a class="modal-live-link liveLink-one" href=""> ${
+        goLiveLinks[0]
+      } <i class="modIcon fab fa-github hero-fab"></i></a>
+      <a class="modal-live-link liveLink-two" href=""> ${
+        goLiveLinks[1]
+      } <i class="modIcon fab fa-pinterest-p hero-fab"></i></a>
+    </div>
+  </div>
+</div>`;
+    modalDisplay.innerHTML = display;
+  };
 
 openMenu.addEventListener("click", show);
 
