@@ -87,3 +87,19 @@ const arrayData = [
     modalButtons: ["html", "Bootstrap", "Ruby on rails"],
   },
 ];
+function show() {
+  mainMenu.style.display = "flex";
+  mainMenu.style.top = "0";
+}
+
+function close() {
+  mainMenu.style.top = "-100%";
+}
+
+slideMenu.forEach((slideMenuCheck) => {
+  slideMenuCheck.addEventListener("click", close);
+});
+
+function closeModal() {
+  modal.classList.remove("showModal");
+}
