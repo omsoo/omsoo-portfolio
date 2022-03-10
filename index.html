@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>omsoo-portfolio</title>
+    <title>OMSOO Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
@@ -13,23 +13,33 @@
   </head>
   <body>
     <div class="main-container">
-      <header>
-        <div class="navbar">
-          <a href="#" class="nav-logo">OMSOO</a>
-          <div class="topnav-right">
-            <a href="#" class="nv-hide">Portfolio</a>
-            <a href="#" class="nv-hide">About</a>
-            <a href="#" class="nv-hide">Contact</a>
-            <div class="nv-hide">
-              <a href="#"><i class="fas fa-envelope"></i></a>
-            </div>
-            <div class="fa-barrs">
-              <a href="#"><i class="fas fa-bars"></i></a>
-            </div>
-          </div>
+      <nav class="navContainer">
+        <a href="#" class="logo"> OMSOO </a>
+        <div class="openMenu"><i class="fa fa-bars"></i></div>
+        <ul class="mainMenu">
+          <li class="menuSlideBorder" id="menuTopMargin">
+            <a href="#portfolio" class="slideMenu">
+              <span class="slideTest">Portfolio</span>
+            </a>
+          </li>
+          <li class="menuSlideBorder">
+            <a href="#about" class="slideMenu">About</a>
+          </li>
+          <li class="menuSlideBorder">
+            <a href="#contact" class="slideMenu">Contact</a>
+          </li>
+
+          <li>
+            <a href="#"><i class="fas envelope fa-envelope"></i></a>
+          </li>
+          <div class="closeMenu"><i class="fa fa-times"></i></div>
+        </ul>
+      </nav>
+      <div class="modal">
+        
         </div>
-      </header>
-      <div class="hero-container sub-container">
+      </div>
+      <header class="hero-container sub-container">
         <div class="hero-sctn">
           <h1 class="hero-highlight-1">
             Hey There. <br />
@@ -43,7 +53,7 @@
           </p>
         </div>
         <div class="hero-sctn-icon">
-          <ul class="social-icons">
+          <ul class="social-icons ull">
             <li>
               <a href="#"><i class="fab fa-github hero-fab"></i></a>
             </li>
@@ -61,8 +71,8 @@
             </li>
           </ul>
         </div>
-      </div>
-      <div class="recent-work">
+      </header>
+      <div class="recent-work" id="portfolio">
         <div class="resent-work-txt">my recent works</div>
         <hr />
       </div>
@@ -75,7 +85,7 @@
               alt="placeholder-img"
             />
           </div>
-          <div class="multi-post">
+          <div class="multi-post" id="portfolio">
             <h2 class="placeholder-header-txt">multi-post stories</h2>
             <p class="place-holder-txt">
               A daily selection of privately personalized reads; no accounts or
@@ -83,13 +93,15 @@
               ever since the 1500s, when an unknown printer took a standard
               dummy text.
             </p>
-            <ul class="technology">
+            <ul class="technology ull">
               <li class="tools">css</li>
               <li class="tools">html</li>
               <li class="tools bootstrap">bootstrap</li>
               <li class="tools">Ruby</li>
             </ul>
-            <button type="button" class="button">see project</button>
+            <button type="button" class="button showProject">
+              see project
+            </button>
           </div>
         </div>
         <div class="grid-container">
@@ -101,7 +113,7 @@
                   A daily selection of privately personalized reads; no accounts
                   or sign-ups required. has been the industry's standard
                 </p>
-                <ul class="card-tool">
+                <ul class="card-tool ull">
                   <li class="tools tools-spec">html</li>
 
                   <li class="tools tools-spec bootstrap">bootstrap</li>
@@ -110,7 +122,9 @@
                 </ul>
               </div>
 
-              <button type="button" class="button btn hide">see project</button>
+              <button type="button" class="button btn hide showProject">
+                see project
+              </button>
             </div>
           </article>
           <article>
@@ -121,7 +135,7 @@
                   A daily selection of privately personalized reads; no accounts
                   or sign-ups required. has been the industry's standard
                 </p>
-                <ul class="card-tool">
+                <ul class="card-tool ull">
                   <li class="tools tools-spec">html</li>
 
                   <li class="tools tools-spec bootstrap">bootstrap</li>
@@ -129,7 +143,7 @@
                   <li class="tools tools-spec">Ruby</li>
                 </ul>
               </div>
-              <button type="button" class="button btn hide appear">
+              <button type="button" class="button btn hide appear showProject">
                 see project
               </button>
             </div>
@@ -142,7 +156,7 @@
                   A daily selection of privately personalized reads; no accounts
                   or sign-ups required. has been the industry's standard
                 </p>
-                <ul class="card-tool">
+                <ul class="card-tool ull">
                   <li class="tools tools-spec">html</li>
 
                   <li class="tools tools-spec bootstrap">bootstrap</li>
@@ -150,7 +164,9 @@
                   <li class="tools tools-spec">Ruby</li>
                 </ul>
               </div>
-              <button type="button" class="button btn hide">see project</button>
+              <button type="button" class="button btn hide showProject">
+                see project
+              </button>
             </div>
           </article>
           <article>
@@ -161,7 +177,7 @@
                   A daily selection of privately personalized reads; no accounts
                   or sign-ups required. has been the industry's standard
                 </p>
-                <ul class="card-tool">
+                <ul class="card-tool ull">
                   <li class="tools tools-spec">html</li>
 
                   <li class="tools tools-spec bootstrap">bootstrap</li>
@@ -169,7 +185,9 @@
                   <li class="tools tools-spec">Ruby</li>
                 </ul>
               </div>
-              <button type="button" class="button btn hide">see project</button>
+              <button type="button" class="button btn hide showProject">
+                see project
+              </button>
             </div>
           </article>
           <article>
@@ -180,7 +198,7 @@
                   A daily selection of privately personalized reads; no accounts
                   or sign-ups required. has been the industry's standard
                 </p>
-                <ul class="card-tool">
+                <ul class="card-tool ull">
                   <li class="tools tools-spec">html</li>
 
                   <li class="tools tools-spec bootstrap">bootstrap</li>
@@ -188,7 +206,9 @@
                   <li class="tools tools-spec">Ruby</li>
                 </ul>
               </div>
-              <button type="button" class="button btn hide">see project</button>
+              <button type="button" class="button btn hide showProject">
+                see project
+              </button>
             </div>
           </article>
           <article>
@@ -199,7 +219,7 @@
                   A daily selection of privately personalized reads; no accounts
                   or sign-ups required. has been the industry's standard
                 </p>
-                <ul class="card-tool">
+                <ul class="card-tool ull">
                   <li class="tools tools-spec">html</li>
 
                   <li class="tools tools-spec bootstrap">bootstrap</li>
@@ -207,12 +227,14 @@
                   <li class="tools tools-spec">Ruby</li>
                 </ul>
               </div>
-              <button type="button" class="button btn hide">see project</button>
+              <button type="button" class="button btn hide showProject">
+                see project
+              </button>
             </div>
           </article>
         </div>
       </section>
-      <div class="about-section">
+      <div class="about-section" id="about">
         <div class="about-header">
           <h3>About me</h3>
           <p class="about-header-text">
@@ -232,7 +254,7 @@
               <span class="diamond"></span>
               <span class="language">language</span>
             </div>
-            <ul class="lang">
+            <ul class="lang ull">
               <li class="lang-item java">
                 <a href="#" class="java-text">javascript</a>
               </li>
@@ -252,7 +274,7 @@
               <span class="square"></span>
               <span class="language">Framework</span>
             </div>
-            <ul class="lang">
+            <ul class="lang ull">
               <li class="lang-item java">
                 <a href="#" class="java-text bootstrap">bootstrap</a>
               </li>
@@ -275,7 +297,7 @@
               <span class="circle"></span>
               <span class="language">skills</span>
             </div>
-            <ul class="lang">
+            <ul class="lang ull">
               <li class="lang-item java">
                 <a href="#" class="java-text">codekit</a>
               </li>
@@ -295,7 +317,7 @@
           </div>
         </div>
       </div>
-      <div class="form-sctn">
+      <div class="form-sctn" id="contact">
         <h3 class="form-header">
           I'm always interested in hearing about new projects, so if you'd like
           to chat please get in touch.
@@ -348,5 +370,6 @@
         </form>
       </div>
     </div>
+    <script src="app.js"></script>
   </body>
 </html>
