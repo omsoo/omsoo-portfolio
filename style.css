@@ -1053,5 +1053,47 @@ Modal Styles
     /* margin-left: 10px; */
   }
 
+  .modal-img {
+    width: 93%;
+    margin: 0 0.8rem;
+    height: 45vh;
+    max-height: 47vh;
+  }
+
+  .gridTwo {
+    height: 327px;
+    max-width: 97%;
+    /* background: rebeccapurple; */
+    position: relative;
+    margin-left: -1.2rem;
+  }
+  .modalDescription {
+    margin: 1.6rem 1rem 1rem 0;
+  }
+
+  .modal-btn-container {
+    position: absolute;
+    bottom: 1.7rem;
+    left: -0.7rem;
+    width: 70%;
+    margin: 0.6rem 0 0.3rem 0.8rem;
+  }
+
+  .liveLink-one {
+    /* position: absolute;
+  bottom: 0;
+  left: 0; */
+    /* margin-left: -1.7rem; */
+    /* width: 50%; */
+    /* margin-right: 1rem; */
+    /* position: absolute;
+  top: 1rem;
+  left: 0;
+  margin-right: 2px; */
+    /* width: 50%; */
+
+    /* padding: 0.6rem 2rem; */
+  }
+
   /* End of Modal Styles */
 }
