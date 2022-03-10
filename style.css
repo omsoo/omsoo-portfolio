@@ -157,9 +157,8 @@ Modal Styles
   left: 0;
   margin-right: 2px;
   width: 111px;
-height: 40px;
-padding: 0.6rem 0.8rem;
-
+  height: 40px;
+  padding: 0.6rem 0.8rem;
 }
 .liveLink-two {
   position: absolute;
@@ -171,6 +170,18 @@ padding: 0.6rem 0.8rem;
   padding: 0.5rem 0.8rem;
   /* align-items: center; */
 }
+
+.gridModal {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+}
+
+.modIcon {
+  /* color: green; */
+  margin-left: 0.7rem;
+}
+
 /* End of Modal Style */
 
 /*
