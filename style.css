@@ -1216,9 +1216,9 @@ button[disabled] {
     /* margin-left: 10px; */
   }
 
-  /* .modal-img {
+  .modal-img {
     width: 93%;
-    margin: 0 0.8rem; */
+    margin: 0 0.8rem;
     height: 45vh;
     max-height: 47vh;
   }
@@ -1234,11 +1234,11 @@ button[disabled] {
     margin: 1.6rem 1rem 1rem 0;
   }
 
-  /* .modal-btn-container{
+  .modal-btn-container{
     position: absolute;
     bottom: 1.7rem;
     left: -0.7rem;
-    width: 70%; */
+    width: 70%;
   margin: 0.6rem 0 0.3rem 0.8rem;
   }
 
