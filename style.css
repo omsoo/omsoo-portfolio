@@ -120,20 +120,20 @@ Modal Styles
   /* background: white; */
 }
 
-/* .modal-img {
+.modal-img {
   width: 93%;
-  margin: 0 0.8rem; */
+  margin: 0 0.8rem;
   height: 36vh;
   /* max-height: 45vh; */
 }
 
 .modalDescription {
-  /* margin: -0.5rem 0.8rem;
+  margin: -0.5rem 0.8rem;
   color: #344563;
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-size: 0.9rem;
-  line-height: 1.2rem; */
+  line-height: 1.2rem;
   font-weight: 400;
   max-height: 10.5rem;
 }
