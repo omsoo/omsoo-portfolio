@@ -87,6 +87,7 @@ const arrayData = [
     modalButtons: ["html", "Bootstrap", "Ruby on rails"],
   },
 ];
+
 function show() {
   mainMenu.style.display = "flex";
   mainMenu.style.top = "0";
@@ -103,7 +104,6 @@ slideMenu.forEach((slideMenuCheck) => {
 function closeModal() {
   modal.classList.remove("showModal");
 }
-
 const openModal =
   ({ name, description, mobileImage, desktopIMG, goLiveLinks, modalButtons }) =>
   () => {
@@ -147,3 +147,18 @@ openModalButton.forEach((item, index) => {
   console.log(item, "Teting");
   item.addEventListener("click", openModal(arrayData[index]));
 });
+
+// window.addEventListener("load", renderGrid, false);
+// window.addEventListener("resize", renderGrid, false);
+
+// function renderGrid() {
+//   var Arrblocks = document.getElementById("grid-container").children;
+//   var padding = 10,
+//     cols = 3,
+//     newleft,
+//     newtop;
+//   for (var i = 1; i < Arrblocks.length; i++) {
+//     console.log(Arrblocks.length + "This is test");
+//   }
+// }
+// renderGrid();
