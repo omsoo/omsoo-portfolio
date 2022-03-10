@@ -80,6 +80,44 @@ Modal Styles
   padding-bottom: 4rem;
 }
 
+.modal-Icons {
+  /* border: 5px solid white; */
+  height: 3rem;
+  width: 86%;
+  margin: 0 0.8rem 0.3rem 0.8rem;
+}
+
+.modalTechnology {
+  margin-right: 0.5rem;
+  width: 100%;
+  border: 1px solid gray;
+  color: #3c3a39;
+  height: 1rem;
+  padding: 10px;
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  line-height: 16px;
+  font-style: bold;
+  /* background: white; */
+}
+
+.modal-img {
+  width: 93%;
+  margin: 0 0.8rem;
+  height: 36vh;
+  /* max-height: 45vh; */
+}
+
+.modalDescription {
+  margin: -0.5rem 0.8rem;
+  color: #344563;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-size: 0.9rem;
+  line-height: 1.2rem;
+  font-weight: 400;
+  max-height: 10.5rem;
+}
 /* End of Modal Style */
 
 /*
