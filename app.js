@@ -103,3 +103,47 @@ slideMenu.forEach((slideMenuCheck) => {
 function closeModal() {
   modal.classList.remove("showModal");
 }
+
+// const openModal =
+//   ({ name, description, mobileImage, desktopIMG, goLiveLinks, modalButtons }) =>
+//   () => {
+//     modal.classList.add("showModal");
+//     let display = "";
+//     display += `
+//   <div class="modalHead">
+//   <h2 class="modalTitle">${name}</h2>
+// </div>
+// <div class="gridModal">
+//   <div class="gridOne">
+//     <div class="modal-Icons">
+//       <a class="modalTechnology" href=""> ${modalButtons[0]} </a>
+//       <a class="modalTechnology" href=""> ${modalButtons[1]} </a>
+//       <a class="modalTechnology" href=""> ${modalButtons[2]} </a>
+//     </div>
+//     <img class="modal-img" src= ${
+//       width > 1024 ? desktopIMG : mobileImage
+//     } alt=${name} />
+//   </div>
+//   <div class="modalMain gridTwo">
+//     <p class="modalDescription">${description}</p>
+//     <div class="modal-btn-container">
+//       <a class="modal-live-link liveLink-one" href=""> ${
+//         goLiveLinks[0]
+//       } <i class="modIcon fab fa-github hero-fab"></i></a>
+//       <a class="modal-live-link liveLink-two" href=""> ${
+//         goLiveLinks[1]
+//       } <i class="modIcon fab fa-pinterest-p hero-fab"></i></a>
+//     </div>
+//   </div>
+// </div>`;
+//     modalDisplay.innerHTML = display;
+//   };
+
+openMenu.addEventListener("click", show);
+
+closeMenu.addEventListener("click", close);
+closeModalButton.addEventListener("click", closeModal);
+openModalButton.forEach((item, index) => {
+  console.log(item, "Teting");
+  item.addEventListener("click", openModal(arrayData[index]));
+});
