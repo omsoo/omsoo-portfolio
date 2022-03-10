@@ -33,12 +33,12 @@ Modal Styles
  */
 
 .modal {
-  /* display: none;
+  display: none;
   place-items: center;
   position: fixed;
   top: 0;
   left: 0;
-  right: 0; */
+  right: 0;
   bottom: 0;
   background: rgba(29, 26, 25, 0.9);
   /* background: gray; */
@@ -51,9 +51,9 @@ Modal Styles
   display: grid;
 }
 
-/* .modal-Inner {
+.modal-Inner {
   position: relative;
-  background: #dfe1e6; */
+  background: #dfe1e6;
   width: 85%;
   height: 94vh;
   margin-bottom: -2rem;
