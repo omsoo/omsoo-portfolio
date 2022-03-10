@@ -87,11 +87,11 @@ Modal Styles
   z-index: 20;
 }
 
-/* .modalTitle {
+.modalTitle {
   color: #172b4d;
   line-height: 2.8rem;
   font-size: 2rem;
-  font-style: bold; */
+  font-style: bold;
   font-family: "Roboto", sans-serif;
   width: 100%;
   height: 90px;
@@ -106,7 +106,7 @@ Modal Styles
   margin: 0 0.8rem 0.3rem 0.8rem;
 }
 
-/* .modalTechnology {
+.modalTechnology {
   margin-right: 0.5rem;
   width: 100%;
   border: 1px solid gray;
@@ -114,7 +114,7 @@ Modal Styles
   height: 1rem;
   padding: 10px;
   font-family: "Poppins", sans-serif;
-  font-size: 13px; */
+  font-size: 13px;
   line-height: 16px;
   font-style: bold;
   /* background: white; */
