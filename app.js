@@ -1,7 +1,7 @@
 /*
-================
-Note for Reviewer, I was done with the projects and already created a PR before my system crashed. I had to clone the repo again after I encountered broken branch
-================
+=====================
+Targets and Selectors
+=====================
  */
 
 const mainMenu = document.querySelector(".mainMenu");
@@ -13,6 +13,14 @@ const closeModalButton = document.querySelector(".closeModal");
 const openModalButton = document.querySelectorAll(".showProject");
 const modalDisplay = document.querySelector(".Modal-InnerMain");
 const width = window.innerWidth;
+let id = (id) => document.getElementById(id);
+let classe = (classe) => document.getElementsByClassName(classe);
+
+/*
+=====================
+Data Storage
+=====================
+ */
 
 const arrayData = [
   {
