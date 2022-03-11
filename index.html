@@ -340,6 +340,7 @@
               placeholder="Full name"
               required
             />
+            <div class="error"></div>
           </div>
           <div class="input-field">
             <label for="femail"></label>
@@ -354,6 +355,7 @@
               placeholder="Email address"
               pattern=".+@gmail\.com"
             />
+            <div class="error"></div>
           </div>
           <div class="txtarea-container">
             <label for="tname"></label>
@@ -368,7 +370,10 @@
               required
             ></textarea>
           </div>
-          <input class="bt button" type="submit" value="Get in touch" />
+          <div class="contact-btn-container">
+            <div class="error"></div>
+            <input class="bt button" type="submit" value="Get in touch" />
+          </div>
         </form>
       </div>
     </div>
