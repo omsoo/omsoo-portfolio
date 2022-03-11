@@ -865,13 +865,14 @@ button[disabled] {
   position: absolute;
   top: 10px;
   left: 0;
-  /* color: red; */
-  font-weight: 300;
+  color: #7d1a13;
+  font-weight: bold;
   padding: 5px;
   font-style: italic;
   animation: bounce 1.5s ease infinite;
   /* background: gray; */
 }
+
 .bt {
   position: absolute;
   top: 20px;
