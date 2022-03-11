@@ -21,6 +21,10 @@ let classe = (classe) => document.getElementsByClassName(classe);
 Data Storage
 =====================
  */
+let username = id("username"),
+  email = id("femail"),
+  form = id("mform"),
+  errorDisp = classe("error");
 
 const arrayData = [
   {
