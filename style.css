@@ -2,12 +2,6 @@
 
 /*
 ================
-Note for Reviewer, I was done with the projects and already created a PR before my system crashed. I had to clone the repo again after I encountered broken branch
-================
- */
-
-/*
-================
 Variables
 ================
  */
@@ -434,10 +428,6 @@ nav .logo:hover {
   float: right;
 }
 
-/* .portfolio {
-  float: right;
-} */
-
 .nv-hide {
   display: none;
 }
@@ -861,6 +851,7 @@ button[disabled] {
 .contact-btn-container {
   position: relative;
 }
+
 #text {
   position: absolute;
   top: 10px;
@@ -870,7 +861,6 @@ button[disabled] {
   padding: 5px;
   font-style: italic;
   animation: bounce 1.5s ease infinite;
-  /* background: gray; */
 }
 
 .bt {
@@ -894,7 +884,6 @@ button[disabled] {
   height: 40px;
   border: none;
   margin-left: 16px;
-  /* background: red; */
 }
 
 ::placeholder {
@@ -1088,10 +1077,6 @@ button[disabled] {
 
   .diamond-language {
     padding: 8px 0;
-  }
-
-  .language-contaier {
-    /* float: left; */
   }
 
   .form-sctn {
