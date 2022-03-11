@@ -106,6 +106,19 @@ const arrayData = [
   },
 ];
 
+/*
+=====================
+Funtions/Actions
+=====================
+ */
+let validateForm = (id, errsucfail, message) => {
+  if (id.value.trim() === "") {
+    errorMsg[errsucfail].innerHTML = message;
+  } else {
+    errorMsg[errsucfail].innerHTML = "";
+  }
+};
+
 function show() {
   mainMenu.style.display = "flex";
   mainMenu.style.top = "0";
