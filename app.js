@@ -115,10 +115,6 @@ function close() {
   mainMenu.style.top = "-100%";
 }
 
-slideMenu.forEach((slideMenuCheck) => {
-  slideMenuCheck.addEventListener("click", close);
-});
-
 function closeModal() {
   modal.classList.remove("showModal");
 }
@@ -157,6 +153,18 @@ const openModal =
     modalDisplay.innerHTML = display;
   };
 
+/*
+=====================
+Event Listeners
+=====================
+ */
+form.addEventListener("submit", (eve) => {
+  eve.preventDefault();
+});
+
+slideMenu.forEach((slideMenuCheck) => {
+  slideMenuCheck.addEventListener("click", close);
+});
 openMenu.addEventListener("click", show);
 
 closeMenu.addEventListener("click", close);
