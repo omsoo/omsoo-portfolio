@@ -2,12 +2,6 @@
 
 /*
 ================
-Note for Reviewer, I was done with the projects and already created a PR before my system crashed. I had to clone the repo again after I encountered broken branch
-================
- */
-
-/*
-================
 Variables
 ================
  */
@@ -434,10 +428,6 @@ nav .logo:hover {
   float: right;
 }
 
-/* .portfolio {
-  float: right;
-} */
-
 .nv-hide {
   display: none;
 }
@@ -849,12 +839,38 @@ button[disabled] {
   color: #172b4d;
 }
 
-.mform {
+.contact-form {
   display: flex;
   flex-direction: column;
   width: 327px;
   height: 400px;
   margin: 70px 0;
+}
+
+/* form validation */
+.contact-btn-container {
+  position: relative;
+}
+
+#text {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  color: #7d1a13;
+  font-weight: bold;
+  padding: 5px;
+  font-style: italic;
+  animation: bounce 1.5s ease infinite;
+}
+
+.bt {
+  position: absolute;
+  top: 20px;
+  width: 131px;
+  height: 48px;
+  padding: 12px;
+  margin: 24px 0;
+  order: 3;
 }
 
 .input-field {
@@ -899,14 +915,6 @@ button[disabled] {
 
 .txt-area::placeholder {
   color: #3c3a39;
-}
-
-.bt {
-  width: 131px;
-  height: 48px;
-  padding: 12px;
-  margin: 24px 0;
-  order: 3;
 }
 
 @media (max-width: 800px) {
@@ -1071,10 +1079,6 @@ button[disabled] {
     padding: 8px 0;
   }
 
-  .language-contaier {
-    /* float: left; */
-  }
-
   .form-sctn {
     padding-left: 5rem;
     flex-direction: row;
@@ -1087,7 +1091,7 @@ button[disabled] {
     margin-top: -15rem;
   }
 
-  .mform {
+  .contact-form {
     width: 60%;
     margin-top: -2rem;
     margin-left: 2rem;
