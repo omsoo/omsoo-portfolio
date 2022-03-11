@@ -1,9 +1,3 @@
-/*
-=====================
-Targets and Selectors
-=====================
- */
-
 const mainMenu = document.querySelector(".mainMenu");
 const closeMenu = document.querySelector(".closeMenu");
 const openMenu = document.querySelector(".openMenu");
@@ -12,19 +6,11 @@ const modal = document.querySelector(".modal");
 const closeModalButton = document.querySelector(".closeModal");
 const openModalButton = document.querySelectorAll(".showProject");
 const modalDisplay = document.querySelector(".Modal-InnerMain");
-const width = window.innerWidth;
-let id = (id) => document.getElementById(id);
-let classe = (classe) => document.getElementsByClassName(classe);
+const form = document.getElementById("form");
+let small = document.getElementById("text");
 
-/*
-=====================
-Data Storage
-=====================
- */
-let username = id("username"),
-  email = id("femail"),
-  form = id("mform"),
-  errorDisp = classe("error");
+const pattern = /^[a-z]+@[a-z0-9-]+\.[a-z0-9-.]+$/;
+const width = window.innerWidth;
 
 const arrayData = [
   {
@@ -106,19 +92,6 @@ const arrayData = [
   },
 ];
 
-/*
-=====================
-Funtions/Actions
-=====================
- */
-let validateForm = (id, errsucfail, message) => {
-  if (id.value.trim() === "") {
-    errorMsg[errsucfail].innerHTML = message;
-  } else {
-    errorMsg[errsucfail].innerHTML = "";
-  }
-};
-
 function show() {
   mainMenu.style.display = "flex";
   mainMenu.style.top = "0";
@@ -127,6 +100,10 @@ function show() {
 function close() {
   mainMenu.style.top = "-100%";
 }
+
+slideMenu.forEach((slideMenuCheck) => {
+  slideMenuCheck.addEventListener("click", close);
+});
 
 function closeModal() {
   modal.classList.remove("showModal");
@@ -166,18 +143,6 @@ const openModal =
     modalDisplay.innerHTML = display;
   };
 
-/*
-=====================
-Event Listeners
-=====================
- */
-form.addEventListener("submit", (eve) => {
-  eve.preventDefault();
-});
-
-slideMenu.forEach((slideMenuCheck) => {
-  slideMenuCheck.addEventListener("click", close);
-});
 openMenu.addEventListener("click", show);
 
 closeMenu.addEventListener("click", close);
@@ -185,3 +150,26 @@ closeModalButton.addEventListener("click", closeModal);
 openModalButton.forEach((item, index) => {
   item.addEventListener("click", openModal(arrayData[index]));
 });
+
+function contactValidation(e) {
+  let email = document.getElementById("email").value;
+
+  if (email == "") {
+    e.preventDefault();
+    // form.classList.add("valid");
+    // form.classList.remove("invalid");
+    small.innerHTML = "Empty Imput";
+    small.style.color = "#ff0000";
+  } else if (email !== email.toLowerCase) {
+    e.preventDefault();
+    // form.classList.add("valid");
+    // form.classList.remove("invalid");
+    small.innerHTML = "E-mail must be small letter, FORM NOT submitted";
+    small.style.color = "#7d1a13";
+  } else {
+    // form.classList.remove("valid");
+    // form.classList.add("invalid");
+    small.innerHTML = "FORM submitted!";
+    small.style.color = "#00ff00";
+  }
+}

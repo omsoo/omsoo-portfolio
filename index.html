@@ -325,10 +325,11 @@
           to chat please get in touch.
         </h3>
         <form
-          id="mform"
-          class="mform"
+          id="contact-form"
+          class="contact-form"
           action="https://formspree.io/f/xrgjqdqe"
           method="post"
+          onsubmit="contactValidation(event)"
         >
           <div class="input-field">
             <label for="username"></label>
@@ -341,22 +342,18 @@
               placeholder="Full name"
               required
             />
-            <div class="error"></div>
           </div>
-          <div class="input-field">
+          <div class="input-field" id="input-field">
             <label for="femail"></label>
             <input
               size="64"
               maxlength="64"
-              required
               class="name-email"
               type="email"
-              id="femail"
-              name="femail"
+              id="email"
+              name="email"
               placeholder="Email address"
-              pattern=".+@gmail\.com"
             />
-            <div class="error"></div>
           </div>
           <div class="txtarea-container">
             <label for="tname"></label>
@@ -372,8 +369,10 @@
             ></textarea>
           </div>
           <div class="contact-btn-container">
-            <div class="error"></div>
-            <input class="bt button" type="submit" value="Get in touch" />
+            <small id="text"></small>
+            <button class="bt button" id="contact-submit" type="submit">
+              Get in Touch
+            </button>
           </div>
         </form>
       </div>
