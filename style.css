@@ -27,6 +27,156 @@ body {
   background: #fff;
 }
 
+/*
+==============
+Modal Styles
+==============
+ */
+
+.modal {
+  display: none;
+  place-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(29, 26, 25, 0.9);
+  backdrop-filter: blur(2px);
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+
+.showModal {
+  display: grid;
+}
+
+.modal-Inner {
+  position: relative;
+  background: #dfe1e6;
+  width: 85%;
+  height: 94vh;
+  margin-bottom: -2rem;
+}
+
+.Modal-InnerMain {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 4rem;
+}
+
+.modal-Inner .closeModal {
+  position: absolute;
+  top: 19px;
+  right: 20px;
+  width: 2rem;
+  cursor: pointer;
+  background: none;
+  outline: none;
+  border: none;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #67798e;
+  z-index: 20;
+}
+
+.modalTitle {
+  color: #172b4d;
+  line-height: 2.8rem;
+  font-size: 2rem;
+  font-style: normal;
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  height: 90px;
+  margin: 1rem 0.8rem 0 0.8rem;
+}
+
+.modal-Icons {
+  height: 3rem;
+  width: 86%;
+  margin: 0 0.8rem 0.3rem 0.8rem;
+}
+
+.modalTechnology {
+  margin-right: 0.5rem;
+  width: 100%;
+  border: 1px solid gray;
+  color: #3c3a39;
+  height: 1rem;
+  padding: 10px;
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  line-height: 16px;
+  font-style: normal;
+}
+
+.modal-img {
+  width: 93%;
+  margin: 0 0.8rem;
+  height: 36vh;
+}
+
+.modalDescription {
+  margin: -0.5rem 0.8rem;
+  color: #344563;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-size: 0.9rem;
+  line-height: 1.2rem;
+  font-weight: 400;
+  max-height: 10.5rem;
+}
+
+.modal-btn-container {
+  position: relative;
+  height: 24px;
+  width: 95%;
+  margin: 0.6rem 0 0.3rem 0.8rem;
+}
+
+.modal-live-link {
+  background: #ff6b00;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  width: 50%;
+  font-style: normal;
+}
+
+.liveLink-one {
+  position: absolute;
+  top: 1rem;
+  left: 0;
+  margin-right: 2px;
+  width: 111px;
+  height: 40px;
+  padding: 0.6rem 0.8rem;
+}
+
+.liveLink-two {
+  position: absolute;
+  top: 1rem;
+  left: 120px;
+  width: 130px;
+  height: 40px;
+  padding: 0.5rem 0.8rem;
+}
+
+.gridModal {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+}
+
+.modIcon {
+  margin-left: 0.7rem;
+}
+
+/* End of Modal */
+
 .ull {
   list-style-type: none;
   display: flex;
@@ -278,9 +428,9 @@ nav .logo:hover {
   float: right;
 }
 
-.portfolio {
+/* .portfolio {
   float: right;
-}
+} */
 
 .nv-hide {
   display: none;
@@ -1005,4 +1155,62 @@ button[disabled] {
   .hide-2:hover {
     opacity: 0;
   }
+
+  /*
+====================
+Modal Styles Desktop
+====================
+ */
+
+  .gridModal {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .modal-Icons {
+    height: 3rem;
+    width: 86%;
+    margin: -30px 0.8rem 0.3rem 0.8rem;
+  }
+
+  .modalTechnology {
+    padding: 6px 8px;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .modal-Inner {
+    width: 80%;
+    max-height: 68vh;
+  }
+
+  .modalTitle {
+    font-family: "Crete Round", sans-serif;
+  }
+
+  .modal-img {
+    width: 93%;
+    margin: 0 0.8rem;
+    height: 45vh;
+    max-height: 47vh;
+  }
+
+  .gridTwo {
+    height: 327px;
+    max-width: 97%;
+    position: relative;
+    margin-left: -1.2rem;
+  }
+
+  .modalDescription {
+    margin: 1.6rem 1rem 1rem 0;
+  }
+
+  .modal-btn-container {
+    position: absolute;
+    bottom: 1.7rem;
+    left: -0.7rem;
+    width: 70%;
+    margin: 0.6rem 0 0.3rem 0.8rem;
+  }
+
+  /* End of Modal for Desktop */
 }

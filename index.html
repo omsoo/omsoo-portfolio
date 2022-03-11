@@ -32,9 +32,15 @@
           <li>
             <a href="#"><i class="fas envelope fa-envelope"></i></a>
           </li>
-          <div class="closeMenu"><i class="fa fa-times"></i></div>
+          <li class="closeMenu"><i class="fa fa-times"></i></li>
         </ul>
       </nav>
+      <div class="modal">
+        <div class="modal-Inner">
+          <button type="button" class="closeModal">&times;</button>
+          <div class="Modal-InnerMain"></div>
+        </div>
+      </div>
       <header class="hero-container sub-container">
         <div class="hero-sctn">
           <h1 class="hero-highlight-1">
@@ -68,8 +74,8 @@
           </ul>
         </div>
       </header>
-      <div class="recent-work" id="portfolio">
-        <div class="resent-work-txt">my recent works</div>
+      <div class="recent-work">
+        <div class="resent-work-txt" id="portfolio">my recent works</div>
         <hr />
       </div>
       <section class="grid-containers">
@@ -81,7 +87,7 @@
               alt="placeholder-img"
             />
           </div>
-          <div class="multi-post" id="portfolio">
+          <div class="multi-post">
             <h2 class="placeholder-header-txt">multi-post stories</h2>
             <p class="place-holder-txt">
               A daily selection of privately personalized reads; no accounts or
@@ -95,7 +101,9 @@
               <li class="tools bootstrap">bootstrap</li>
               <li class="tools">Ruby</li>
             </ul>
-            <button type="button" class="button">see project</button>
+            <button type="button" class="button showProject">
+              see project
+            </button>
           </div>
         </div>
         <div class="grid-container">
@@ -116,7 +124,9 @@
                 </ul>
               </div>
 
-              <button type="button" class="button btn hide">see project</button>
+              <button type="button" class="button btn hide showProject">
+                see project
+              </button>
             </div>
           </article>
           <article>
@@ -135,7 +145,7 @@
                   <li class="tools tools-spec">Ruby</li>
                 </ul>
               </div>
-              <button type="button" class="button btn hide appear">
+              <button type="button" class="button btn hide appear showProject">
                 see project
               </button>
             </div>
@@ -156,7 +166,9 @@
                   <li class="tools tools-spec">Ruby</li>
                 </ul>
               </div>
-              <button type="button" class="button btn hide">see project</button>
+              <button type="button" class="button btn hide showProject">
+                see project
+              </button>
             </div>
           </article>
           <article>
@@ -175,7 +187,9 @@
                   <li class="tools tools-spec">Ruby</li>
                 </ul>
               </div>
-              <button type="button" class="button btn hide">see project</button>
+              <button type="button" class="button btn hide showProject">
+                see project
+              </button>
             </div>
           </article>
           <article>
@@ -194,7 +208,9 @@
                   <li class="tools tools-spec">Ruby</li>
                 </ul>
               </div>
-              <button type="button" class="button btn hide">see project</button>
+              <button type="button" class="button btn hide showProject">
+                see project
+              </button>
             </div>
           </article>
           <article>
@@ -213,7 +229,9 @@
                   <li class="tools tools-spec">Ruby</li>
                 </ul>
               </div>
-              <button type="button" class="button btn hide">see project</button>
+              <button type="button" class="button btn hide showProject">
+                see project
+              </button>
             </div>
           </article>
         </div>
