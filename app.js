@@ -156,19 +156,19 @@ function contactValidation(e) {
 
   if (email == "") {
     e.preventDefault();
-    // form.classList.add("valid");
-    // form.classList.remove("invalid");
+    form.classList.add("valid");
+    form.classList.remove("invalid");
     small.innerHTML = "Empty Email Imput!";
     small.style.color = "#ff0000";
   } else if (email !== email.toLowerCase) {
     e.preventDefault();
-    // form.classList.add("valid");
-    // form.classList.remove("invalid");
+    form.classList.add("valid");
+    form.classList.remove("invalid");
     small.innerHTML = "E-mail must be small letter, FORM NOT submitted!";
     small.style.color = "#7d1a13";
   } else {
-    // form.classList.remove("valid");
-    // form.classList.add("invalid");
+    form.classList.remove("valid");
+    form.classList.add("invalid");
     small.innerHTML = "FORM submitted!";
     small.style.color = "#00ff00";
   }
