@@ -869,6 +869,7 @@ button[disabled] {
   font-weight: 300;
   padding: 5px;
   font-style: italic;
+  animation: bounce 1.5s ease infinite;
   /* background: gray; */
 }
 .bt {
