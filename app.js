@@ -11,6 +11,27 @@ const form = document.querySelector("#contact-form")
 const small = document.getElementById('text')
 const formSubmit = document.getElementById('contact-submit')
 const width = window.innerWidth
+=======
+const small = document.getElementById('text')
+const width = window.innerWidth
+=======
+/*
+================
+Note for Reviewer, I was done with the projects and
+already created a PR before my system crashed. I had
+ to clone the repo again after I encountered broken branch
+================
+ */
+
+const mainMenu = document.querySelector('.mainMenu');
+const closeMenu = document.querySelector('.closeMenu');
+const openMenu = document.querySelector('.openMenu');
+const slideMenu = document.querySelectorAll('.slideMenu');
+const modal = document.querySelector('.modal');
+const closeModalButton = document.querySelector('.closeModal');
+const openModalButton = document.querySelectorAll('.showProject');
+const modalDisplay = document.querySelector('.Modal-InnerMain');
+const width = window.innerWidth;
 
 const arrayData = [
   {
@@ -23,7 +44,45 @@ const arrayData = [
     desktopIMG: './images/modal-2.png',
     goLiveLinks: ['See Live ', 'See Source'],
 
+
     modalButtons: ['html', 'Bootstrap', 'Ruby on rails']
+
+    modalButtons: ['html', 'Bootstrap', 'Ruby on rails']
+  },
+  {
+    name: 'Multi Post Stories',
+    description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+    printer took a galley of type and scrambled it to make a type specimen book. It has survived not
+    only five centuries, but also the leap into electronic typesetting, remaining essent`,
+    mobileImage: './images/modal-1.png',
+    desktopIMG: './images/modal-2.png',
+    goLiveLinks: ['See Live', 'See Source'],
+
+
+    modalButtons: ['html', 'Bootstrap', 'Ruby on rails']
+
+
+
+
+  },
+  {
+    name: 'Multi Post Stories',
+    description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+    printer took a galley of type and scrambled it to make a type specimen book. It has survived not
+    only five centuries, but also the leap into electronic typesetting, remaining essent`,
+    mobileImage: './images/modal-1.png',
+    desktopIMG: './images/modal-2.png',
+    goLiveLinks: ['See Live', 'See Source'],
+
+
+    modalButtons: ['html', 'Bootstrap', 'Ruby on rails']
+
+
+
+    modalButtons: ['html', 'Bootstrap', 'Ruby on rails']
+
 
   },
   {
@@ -50,19 +109,6 @@ const arrayData = [
     desktopIMG: './images/modal-2.png',
     goLiveLinks: ['See Live', 'See Source'],
 
-    modalButtons: ['html', 'Bootstrap', 'Ruby on rails']
-
-
-  },
-  {
-    name: 'Multi Post Stories',
-    description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
-    printer took a galley of type and scrambled it to make a type specimen book. It has survived not
-    only five centuries, but also the leap into electronic typesetting, remaining essent`,
-    mobileImage: './images/modal-1.png',
-    desktopIMG: './images/modal-2.png',
-    goLiveLinks: ['See Live', 'See Source'],
 
     modalButtons: ['html', 'Bootstrap', 'Ruby on rails']
 
@@ -78,20 +124,9 @@ const arrayData = [
     desktopIMG: './images/modal-2.png',
     goLiveLinks: ['See Live', 'See Source'],
 
-    modalButtons: ['html', 'Bootstrap', 'Ruby on rails']
-
-  },
-  {
-    name: 'Multi Post Stories',
-    description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
-    printer took a galley of type and scrambled it to make a type specimen book. It has survived not
-    only five centuries, but also the leap into electronic typesetting, remaining essent`,
-    mobileImage: './images/modal-1.png',
-    desktopIMG: './images/modal-2.png',
-    goLiveLinks: ['See Live', 'See Source'],
 
     modalButtons: ['html', 'Bootstrap', 'Ruby on rails']
+
 
   },
   {
@@ -132,6 +167,41 @@ const openModal =
       display += `
 
 
+    modalButtons: ['html', 'Bootstrap', 'Ruby on rails']
+  }
+]
+
+function show () {
+  mainMenu.style.display = 'flex'
+  mainMenu.style.top = '0'
+}
+
+function close () {
+  mainMenu.style.top = '-100%'
+}
+
+slideMenu.forEach((slideMenuCheck) => {
+  slideMenuCheck.addEventListener('click', close)
+})
+
+function closeModal () {
+  modal.classList.remove('showModal')
+}
+
+const openModal =
+  ({ name, description, mobileImage, desktopIMG, goLiveLinks, modalButtons }) =>
+    () => {
+      modal.classList.add('showModal')
+      let display = ''
+      display += `
+
+const openModal = ({
+  name, description, mobileImage, desktopIMG, goLiveLinks, modalButtons,
+}) => () => {
+  modal.classList.add('showModal');
+  let display = '';
+  display += `
+
   <div class="modalHead">
   <h2 class="modalTitle">${name}</h2>
 </div>
@@ -167,6 +237,37 @@ openMenu.addEventListener('click', show)
 closeMenu.addEventListener('click', close)
 closeModalButton.addEventListener('click', closeModal)
 openModalButton.forEach((item, index) => {
+  item.addEventListener('click', openModal(arrayData[index]))
+})
+
+function contactValidation (e) {
+  const email = document.getElementById('email').value
+
+  if (email === '') {
+    e.preventDefault()
+
+    small.innerHTML = 'Hey Comrade! , e-mail field cannot be emty!'
+  } else if (email !== email.toLowerCase) {
+    e.preventDefault()
+
+    small.innerHTML =
+      'Hey Comrade!, e-mail must be small letter, FORM NOT submitted!'
+  } else {
+    small.innerHTML = 'FORM submitted!'
+    small.style.color = '#00ff00'
+  }
+}
+
+</div>`
+      modalDisplay.innerHTML = display
+    }
+
+openMenu.addEventListener('click', show)
+
+closeMenu.addEventListener('click', close)
+closeModalButton.addEventListener('click', closeModal)
+openModalButton.forEach((item, index) => {
+
   item.addEventListener('click', openModal(arrayData[index]))
 })
 
