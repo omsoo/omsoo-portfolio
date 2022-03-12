@@ -170,23 +170,6 @@ openModalButton.forEach((item, index) => {
   item.addEventListener('click', openModal(arrayData[index]))
 })
 
-function contactValidation (e) {
-  const email = document.getElementById('email').value
-
-  if (email === '') {
-    e.preventDefault()
-
-    small.innerHTML = 'e-mail field cannot be emty'
-  } else if (email !== email.toLowerCase()) {
-    e.preventDefault()
-
-    small.innerHTML =
-      'email must be lowercase'
-  } else {
-    small.innerHTML = 'FORM submitted!'
-    small.style.color = '#00ff00'
-  }
-}
 
 formSubmit.addEventListener("click", function (e) {
          const email = document.getElementById('email').value
