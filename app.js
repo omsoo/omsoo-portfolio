@@ -6,7 +6,9 @@ const modal = document.querySelector('.modal')
 const closeModalButton = document.querySelector('.closeModal')
 const openModalButton = document.querySelectorAll('.showProject')
 const modalDisplay = document.querySelector('.Modal-InnerMain')
+const form = document.querySelector("#contact-form")
 const small = document.getElementById('text')
+const formSubmit = document.getElementById('contact-submit')
 const width = window.innerWidth
 
 const arrayData = [
@@ -154,16 +156,31 @@ function contactValidation (e) {
   if (email === '') {
     e.preventDefault()
 
-    small.innerHTML = 'Hey Comrade! , e-mail field cannot be emty!'
-  } else if (email !== email.toLowerCase) {
+    small.innerHTML = 'e-mail field cannot be emty'
+  } else if (email !== email.toLowerCase()) {
     e.preventDefault()
 
     small.innerHTML =
-      'Hey Comrade!, e-mail must be small letter, FORM NOT submitted!'
+      'email must be lowercase'
   } else {
     small.innerHTML = 'FORM submitted!'
     small.style.color = '#00ff00'
   }
 }
 
-contactValidation()
+formSubmit.addEventListener("click", function (e) {
+         const email = document.getElementById('email').value
+
+  if (email === '') {
+    e.preventDefault()
+
+    small.innerHTML = 'e-mail field cannot be emty'
+  } else if (email !== email.toLowerCase()) {
+    e.preventDefault()
+
+    small.innerHTML =
+      'email must be lowercase'
+  } else {
+  }
+ });
+
