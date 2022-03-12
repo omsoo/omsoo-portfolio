@@ -1,3 +1,4 @@
+
 const mainMenu = document.querySelector('.mainMenu')
 const closeMenu = document.querySelector('.closeMenu')
 const openMenu = document.querySelector('.openMenu')
@@ -6,7 +7,9 @@ const modal = document.querySelector('.modal')
 const closeModalButton = document.querySelector('.closeModal')
 const openModalButton = document.querySelectorAll('.showProject')
 const modalDisplay = document.querySelector('.Modal-InnerMain')
+const form = document.querySelector("#contact-form")
 const small = document.getElementById('text')
+const formSubmit = document.getElementById('contact-submit')
 const width = window.innerWidth
 
 const arrayData = [
@@ -19,7 +22,9 @@ const arrayData = [
     mobileImage: './images/modal-1.png',
     desktopIMG: './images/modal-2.png',
     goLiveLinks: ['See Live ', 'See Source'],
+
     modalButtons: ['html', 'Bootstrap', 'Ruby on rails']
+
   },
   {
     name: 'Multi Post Stories',
@@ -30,7 +35,10 @@ const arrayData = [
     mobileImage: './images/modal-1.png',
     desktopIMG: './images/modal-2.png',
     goLiveLinks: ['See Live', 'See Source'],
+
     modalButtons: ['html', 'Bootstrap', 'Ruby on rails']
+
+
   },
   {
     name: 'Multi Post Stories',
@@ -41,7 +49,10 @@ const arrayData = [
     mobileImage: './images/modal-1.png',
     desktopIMG: './images/modal-2.png',
     goLiveLinks: ['See Live', 'See Source'],
+
     modalButtons: ['html', 'Bootstrap', 'Ruby on rails']
+
+
   },
   {
     name: 'Multi Post Stories',
@@ -52,7 +63,10 @@ const arrayData = [
     mobileImage: './images/modal-1.png',
     desktopIMG: './images/modal-2.png',
     goLiveLinks: ['See Live', 'See Source'],
+
     modalButtons: ['html', 'Bootstrap', 'Ruby on rails']
+
+
   },
   {
     name: 'Multi Post Stories',
@@ -63,7 +77,9 @@ const arrayData = [
     mobileImage: './images/modal-1.png',
     desktopIMG: './images/modal-2.png',
     goLiveLinks: ['See Live', 'See Source'],
+
     modalButtons: ['html', 'Bootstrap', 'Ruby on rails']
+
   },
   {
     name: 'Multi Post Stories',
@@ -74,7 +90,9 @@ const arrayData = [
     mobileImage: './images/modal-1.png',
     desktopIMG: './images/modal-2.png',
     goLiveLinks: ['See Live', 'See Source'],
+
     modalButtons: ['html', 'Bootstrap', 'Ruby on rails']
+
   },
   {
     name: 'Multi Post Stories',
@@ -85,6 +103,7 @@ const arrayData = [
     mobileImage: './images/modal-1.png',
     desktopIMG: './images/modal-2.png',
     goLiveLinks: ['See Live', 'See Source'],
+
     modalButtons: ['html', 'Bootstrap', 'Ruby on rails']
   }
 ]
@@ -111,6 +130,8 @@ const openModal =
       modal.classList.add('showModal')
       let display = ''
       display += `
+
+
   <div class="modalHead">
   <h2 class="modalTitle">${name}</h2>
 </div>
@@ -122,20 +143,21 @@ const openModal =
       <a class="modalTechnology" href=""> ${modalButtons[2]} </a>
     </div>
     <img class="modal-img" src= ${
-      width > 1024 ? desktopIMG : mobileImage
-    } alt=${name} />
+  width > 1024 ? desktopIMG : mobileImage
+} alt=${name} />
   </div>
   <div class="modalMain gridTwo">
     <p class="modalDescription">${description}</p>
     <div class="modal-btn-container">
       <a class="modal-live-link liveLink-one" href=""> ${
-        goLiveLinks[0]
-      } <i class="modIcon fab fa-github hero-fab"></i></a>
+  goLiveLinks[0]
+} <i class="modIcon fab fa-github hero-fab"></i></a>
       <a class="modal-live-link liveLink-two" href=""> ${
-        goLiveLinks[1]
-      } <i class="modIcon fab fa-pinterest-p hero-fab"></i></a>
+  goLiveLinks[1]
+} <i class="modIcon fab fa-pinterest-p hero-fab"></i></a>
     </div>
   </div>
+
 </div>`
       modalDisplay.innerHTML = display
     }
@@ -154,16 +176,52 @@ function contactValidation (e) {
   if (email === '') {
     e.preventDefault()
 
-    small.innerHTML = 'Hey Comrade! , e-mail field cannot be emty!'
+    small.innerHTML = 'e-mail field cannot be emty'
   } else if (email !== email.toLowerCase()) {
     e.preventDefault()
 
     small.innerHTML =
-      'Hey Comrade!, e-mail must be small letter, FORM NOT submitted!'
+      'email must be lowercase'
   } else {
     small.innerHTML = 'FORM submitted!'
     small.style.color = '#00ff00'
   }
 }
 
-// contactValidation()
+formSubmit.addEventListener("click", function (e) {
+         const email = document.getElementById('email').value
+
+  if (email === '') {
+    e.preventDefault()
+
+    small.innerHTML = 'e-mail field cannot be emty'
+  } else if (email !== email.toLowerCase()) {
+    e.preventDefault()
+
+    small.innerHTML =
+      'email must be lowercase'
+  } else {
+  }
+ });
+
+ 
+
+
+//  const formData = getFromLocalStorage('formData');
+// if (formData !== null) {
+//   names.value = formData.name;
+//   email.value = formData.email;
+//   text.value = formData.message;
+// }
+
+// formInputs.forEach((fe) => {
+//   fe.addEventListener('input', () => {
+//     const objectForLocalStorage = {
+//       name: names.value,
+//       email: email.value,
+//       message: text.value,
+//     };
+//     saveToLocalStorage('formData', objectForLocalStorage);
+//   });
+// });
+
