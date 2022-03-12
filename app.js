@@ -184,6 +184,8 @@ formSubmit.addEventListener("click", function (e) {
     small.innerHTML =
       'email must be lowercase'
   } else {
+    small.innerHTML = 'FORM submitted!'
+    small.style.color = '#00ff00'
   }
  });
 
