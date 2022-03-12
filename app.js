@@ -188,7 +188,7 @@ function contactValidation (e) {
     small.style.color = '#00ff00'
   }
 }
-contactValidation()
+// contactValidation
 
 formSubmit.addEventListener('click', function (e) {
   const email = document.getElementById('email').value
@@ -196,7 +196,7 @@ formSubmit.addEventListener('click', function (e) {
   if (email === '') {
     e.preventDefault()
 
-    small.innerHTML = 'e-mail field cannot be emty'
+    small.innerHTML = 'e-mail field cannot be empty'
   } else if (email !== email.toLowerCase()) {
     e.preventDefault()
 
@@ -228,8 +228,8 @@ formSubmit.addEventListener('click', function (e) {
 //   });
 // });
 
-const saveToLocalStorage = (key, data) => localStorage.setItem(key, JSON.stringify(data))
-const getFromLocalStorage = (key) => JSON.parse(localStorage.getItem(key))
+let saveToLocalStorage = (key, data) => localStorage.setItem(key, JSON.stringify(data))
+let getFromLocalStorage = (key) => JSON.parse(localStorage.getItem(key))
 
 const formData = getFromLocalStorage('formData')
 if (formData !== null) {
@@ -239,7 +239,7 @@ if (formData !== null) {
 }
 
 formInputs.forEach((fe) => {
-  fe.addEventListener('click', () => {
+  fe.addEventListener('input', () => {
     const objectForLocalStorage = {
       name: username.value,
       email: emails.value,
