@@ -8,6 +8,9 @@ const closeModalButton = document.querySelector('.closeModal')
 const openModalButton = document.querySelectorAll('.showProject')
 const modalDisplay = document.querySelector('.Modal-InnerMain')
 const form = document.querySelector("#contact-form")
+const emails = document.querySelector("#email")
+const textarea = document.querySelector("#tname")
+const formInputs = form.querySelectorAll('input, textarea');
 const small = document.getElementById('text')
 const formSubmit = document.getElementById('contact-submit')
 const width = window.innerWidth
@@ -201,6 +204,8 @@ formSubmit.addEventListener("click", function (e) {
     small.innerHTML =
       'email must be lowercase'
   } else {
+    small.innerHTML = ''
+    // small.style.color = '#00ff00'
   }
  });
 
@@ -208,6 +213,9 @@ formSubmit.addEventListener("click", function (e) {
 
 
 //  const formData = getFromLocalStorage('formData');
+
+
+// const formData = getFromLocalStorage('formData');
 // if (formData !== null) {
 //   names.value = formData.name;
 //   email.value = formData.email;
@@ -225,3 +233,23 @@ formSubmit.addEventListener("click", function (e) {
 //   });
 // });
 
+const saveToLocalStorage = (key, data) => localStorage.setItem(key, JSON.stringify(data));
+const getFromLocalStorage = (key) => JSON.parse(localStorage.getItem(key));
+
+const formData = getFromLocalStorage('formData');
+if (formData !== null) {
+  username.value = formData.name;
+  emails.value = formData.email;
+  textarea.value = formData.message;
+}
+
+formInputs.forEach((fe) => {
+  fe.addEventListener('click', () => {
+    const objectForLocalStorage = {
+      name: username.value,
+      email: emails.value,
+      message: textarea.value,
+    };
+    saveToLocalStorage('formData', objectForLocalStorage);
+  });
+});
