@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 const mainMenu = document.querySelector('.mainMenu')
 const closeMenu = document.querySelector('.closeMenu')
 const openMenu = document.querySelector('.openMenu')
@@ -7,27 +7,14 @@ const modal = document.querySelector('.modal')
 const closeModalButton = document.querySelector('.closeModal')
 const openModalButton = document.querySelectorAll('.showProject')
 const modalDisplay = document.querySelector('.Modal-InnerMain')
+const form = document.querySelector('#contact-form')
+const username = document.querySelector('#username')
+const emails = document.querySelector('#email')
+const textarea = document.querySelector('#tname')
+const formInputs = form.querySelectorAll('input, textarea')
 const small = document.getElementById('text')
+const formSubmit = document.getElementById('contact-submit')
 const width = window.innerWidth
-=======
-/*
-================
-Note for Reviewer, I was done with the projects and
-already created a PR before my system crashed. I had
- to clone the repo again after I encountered broken branch
-================
- */
-
-const mainMenu = document.querySelector('.mainMenu');
-const closeMenu = document.querySelector('.closeMenu');
-const openMenu = document.querySelector('.openMenu');
-const slideMenu = document.querySelectorAll('.slideMenu');
-const modal = document.querySelector('.modal');
-const closeModalButton = document.querySelector('.closeModal');
-const openModalButton = document.querySelectorAll('.showProject');
-const modalDisplay = document.querySelector('.Modal-InnerMain');
-const width = window.innerWidth;
->>>>>>> 8f844131951652dc5de3654db9b15ee23df4dae2
 
 const arrayData = [
   {
@@ -39,11 +26,9 @@ const arrayData = [
     mobileImage: './images/modal-1.png',
     desktopIMG: './images/modal-2.png',
     goLiveLinks: ['See Live ', 'See Source'],
-<<<<<<< HEAD
+
     modalButtons: ['html', 'Bootstrap', 'Ruby on rails']
-=======
-    modalButtons: ['html', 'Bootstrap', 'Ruby on rails'],
->>>>>>> 8f844131951652dc5de3654db9b15ee23df4dae2
+
   },
   {
     name: 'Multi Post Stories',
@@ -54,11 +39,9 @@ const arrayData = [
     mobileImage: './images/modal-1.png',
     desktopIMG: './images/modal-2.png',
     goLiveLinks: ['See Live', 'See Source'],
-<<<<<<< HEAD
+
     modalButtons: ['html', 'Bootstrap', 'Ruby on rails']
-=======
-    modalButtons: ['html', 'Bootstrap', 'Ruby on rails'],
->>>>>>> 8f844131951652dc5de3654db9b15ee23df4dae2
+
   },
   {
     name: 'Multi Post Stories',
@@ -69,11 +52,9 @@ const arrayData = [
     mobileImage: './images/modal-1.png',
     desktopIMG: './images/modal-2.png',
     goLiveLinks: ['See Live', 'See Source'],
-<<<<<<< HEAD
+
     modalButtons: ['html', 'Bootstrap', 'Ruby on rails']
-=======
-    modalButtons: ['html', 'Bootstrap', 'Ruby on rails'],
->>>>>>> 8f844131951652dc5de3654db9b15ee23df4dae2
+
   },
   {
     name: 'Multi Post Stories',
@@ -84,11 +65,9 @@ const arrayData = [
     mobileImage: './images/modal-1.png',
     desktopIMG: './images/modal-2.png',
     goLiveLinks: ['See Live', 'See Source'],
-<<<<<<< HEAD
+
     modalButtons: ['html', 'Bootstrap', 'Ruby on rails']
-=======
-    modalButtons: ['html', 'Bootstrap', 'Ruby on rails'],
->>>>>>> 8f844131951652dc5de3654db9b15ee23df4dae2
+
   },
   {
     name: 'Multi Post Stories',
@@ -99,11 +78,9 @@ const arrayData = [
     mobileImage: './images/modal-1.png',
     desktopIMG: './images/modal-2.png',
     goLiveLinks: ['See Live', 'See Source'],
-<<<<<<< HEAD
+
     modalButtons: ['html', 'Bootstrap', 'Ruby on rails']
-=======
-    modalButtons: ['html', 'Bootstrap', 'Ruby on rails'],
->>>>>>> 8f844131951652dc5de3654db9b15ee23df4dae2
+
   },
   {
     name: 'Multi Post Stories',
@@ -114,11 +91,9 @@ const arrayData = [
     mobileImage: './images/modal-1.png',
     desktopIMG: './images/modal-2.png',
     goLiveLinks: ['See Live', 'See Source'],
-<<<<<<< HEAD
+
     modalButtons: ['html', 'Bootstrap', 'Ruby on rails']
-=======
-    modalButtons: ['html', 'Bootstrap', 'Ruby on rails'],
->>>>>>> 8f844131951652dc5de3654db9b15ee23df4dae2
+
   },
   {
     name: 'Multi Post Stories',
@@ -129,7 +104,7 @@ const arrayData = [
     mobileImage: './images/modal-1.png',
     desktopIMG: './images/modal-2.png',
     goLiveLinks: ['See Live', 'See Source'],
-<<<<<<< HEAD
+
     modalButtons: ['html', 'Bootstrap', 'Ruby on rails']
   }
 ]
@@ -156,34 +131,8 @@ const openModal =
       modal.classList.add('showModal')
       let display = ''
       display += `
-=======
-    modalButtons: ['html', 'Bootstrap', 'Ruby on rails'],
-  },
-];
 
-function show() {
-  mainMenu.style.display = 'flex';
-  mainMenu.style.top = '0';
-}
 
-function close() {
-  mainMenu.style.top = '-100%';
-}
-
-slideMenu.forEach((slideMenuCheck) => {
-  slideMenuCheck.addEventListener('click', close);
-});
-
-function closeModal() {
-  modal.classList.remove('showModal');
-}
-const openModal = ({
-  name, description, mobileImage, desktopIMG, goLiveLinks, modalButtons,
-}) => () => {
-  modal.classList.add('showModal');
-  let display = '';
-  display += `
->>>>>>> 8f844131951652dc5de3654db9b15ee23df4dae2
   <div class="modalHead">
   <h2 class="modalTitle">${name}</h2>
 </div>
@@ -209,7 +158,7 @@ const openModal = ({
 } <i class="modIcon fab fa-pinterest-p hero-fab"></i></a>
     </div>
   </div>
-<<<<<<< HEAD
+
 </div>`
       modalDisplay.innerHTML = display
     }
@@ -222,35 +171,37 @@ openModalButton.forEach((item, index) => {
   item.addEventListener('click', openModal(arrayData[index]))
 })
 
-function contactValidation (e) {
+formSubmit.addEventListener('click', function (e) {
   const email = document.getElementById('email').value
-
   if (email === '') {
     e.preventDefault()
-
-    small.innerHTML = 'Hey Comrade! , e-mail field cannot be emty!'
-  } else if (email !== email.toLowerCase) {
+    small.innerHTML = 'e-mail field cannot be empty'
+  } else if (email !== email.toLowerCase()) {
     e.preventDefault()
-
     small.innerHTML =
-      'Hey Comrade!, e-mail must be small letter, FORM NOT submitted!'
+      'email must be lowercase'
   } else {
-    small.innerHTML = 'FORM submitted!'
-    small.style.color = '#00ff00'
+    small.innerHTML = ''
   }
+})
+
+const saveToLocalStorage = (key, data) => localStorage.setItem(key, JSON.stringify(data))
+const getFromLocalStorage = (key) => JSON.parse(localStorage.getItem(key))
+
+const formData = getFromLocalStorage('formData')
+if (formData !== null) {
+  username.value = formData.name
+  emails.value = formData.email
+  textarea.value = formData.message
 }
 
-contactValidation()
-=======
-</div>`;
-  modalDisplay.innerHTML = display;
-};
-
-openMenu.addEventListener('click', show);
-
-closeMenu.addEventListener('click', close);
-closeModalButton.addEventListener('click', closeModal);
-openModalButton.forEach((item, index) => {
-  item.addEventListener('click', openModal(arrayData[index]));
-});
->>>>>>> 8f844131951652dc5de3654db9b15ee23df4dae2
+formInputs.forEach((fe) => {
+  fe.addEventListener('input', () => {
+    const objectForLocalStorage = {
+      name: username.value,
+      email: emails.value,
+      message: textarea.value
+    }
+    saveToLocalStorage('formData', objectForLocalStorage)
+  })
+})
