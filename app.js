@@ -155,7 +155,7 @@ function contactValidation (e) {
     e.preventDefault()
 
     small.innerHTML = 'Hey Comrade! , e-mail field cannot be emty!'
-  } else if (email !== email.toLowerCase) {
+  } else if (email !== email.toLowerCase()) {
     e.preventDefault()
 
     small.innerHTML =
@@ -166,4 +166,4 @@ function contactValidation (e) {
   }
 }
 
-contactValidation()
+// contactValidation()
