@@ -171,65 +171,22 @@ openModalButton.forEach((item, index) => {
   item.addEventListener('click', openModal(arrayData[index]))
 })
 
-function contactValidation (e) {
-  const email = document.getElementById('email').value
-
-  if (email === '') {
-    e.preventDefault()
-
-    small.innerHTML = 'e-mail field cannot be emty'
-  } else if (email !== email.toLowerCase()) {
-    e.preventDefault()
-
-    small.innerHTML =
-      'email must be lowercase'
-  } else {
-    small.innerHTML = 'FORM submitted!'
-    small.style.color = '#00ff00'
-  }
-}
-// contactValidation
-
 formSubmit.addEventListener('click', function (e) {
   const email = document.getElementById('email').value
-
   if (email === '') {
     e.preventDefault()
-
     small.innerHTML = 'e-mail field cannot be empty'
   } else if (email !== email.toLowerCase()) {
     e.preventDefault()
-
     small.innerHTML =
       'email must be lowercase'
   } else {
     small.innerHTML = ''
-    // small.style.color = '#00ff00'
   }
 })
 
-//  const formData = getFromLocalStorage('formData');
-
-// const formData = getFromLocalStorage('formData');
-// if (formData !== null) {
-//   names.value = formData.name;
-//   email.value = formData.email;
-//   text.value = formData.message;
-// }
-
-// formInputs.forEach((fe) => {
-//   fe.addEventListener('input', () => {
-//     const objectForLocalStorage = {
-//       name: names.value,
-//       email: email.value,
-//       message: text.value,
-//     };
-//     saveToLocalStorage('formData', objectForLocalStorage);
-//   });
-// });
-
-let saveToLocalStorage = (key, data) => localStorage.setItem(key, JSON.stringify(data))
-let getFromLocalStorage = (key) => JSON.parse(localStorage.getItem(key))
+const saveToLocalStorage = (key, data) => localStorage.setItem(key, JSON.stringify(data))
+const getFromLocalStorage = (key) => JSON.parse(localStorage.getItem(key))
 
 const formData = getFromLocalStorage('formData')
 if (formData !== null) {
